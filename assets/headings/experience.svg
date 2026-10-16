@@ -1,41 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="Experience">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f2027"/><stop offset="0.55" stop-color="#203a43"/><stop offset="1" stop-color="#2c5364"/>
-    </linearGradient>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
-    </pattern>
-    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#34d399" stop-opacity="0.35"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/>
-    </linearGradient>
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#34d399" stop-opacity="0"/><stop offset="0.5" stop-color="#34d399"/><stop offset="1" stop-color="#34d399" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="type"><rect x="100" y="0" height="64" width="0">
-      <animate attributeName="width" values="0;152;152;0" keyTimes="0;0.3;0.9;1" dur="9s" repeatCount="indefinite"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="54" viewBox="0 0 900 54" role="img" aria-label="Experience">
+  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}</style>
+  
+    <clipPath id="h-experience"><rect x="366.0" y="8.0" width="0" height="42.0">
+      <animate attributeName="width" calcMode="discrete" values="0.0;16.8;33.6;50.4;67.2;84.0;100.8;117.6;134.4;151.2;168.0;0.0" keyTimes="0;0.0250;0.0294;0.0338;0.0381;0.0425;0.0469;0.0513;0.0556;0.0600;0.0644;0.9688" dur="16s" repeatCount="indefinite"/>
     </rect></clipPath>
-  </defs>
-  <rect width="900" height="64" rx="10" fill="url(#bg)"/>
-  <rect width="900" height="64" rx="10" fill="url(#grid)"/>
-  <rect x="0" y="0" width="5" height="64" rx="2" fill="#34d399"/>
-  <text x="22" y="38" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="14" fill="#7d8fa3">In [6]:</text>
-  <g clip-path="url(#type)">
-    <text x="100" y="42" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="25" font-weight="700" fill="#ffffff">Experience</text>
-  </g>
-  <rect x="100" y="16" width="2.5" height="32" fill="#34d399">
-    <animate attributeName="x" values="100;252;252;100" keyTimes="0;0.3;0.9;1" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
-  </rect>
-  <path d="M610.0 35.3 L630.8 30.8 L651.5 25.4 L672.3 23.9 L693.1 26.4 L713.8 26.1 L734.6 23.3 L755.4 22.1 L776.2 19.5 L796.9 15.7 L817.7 15.7 L838.5 15.8 L859.2 15.9 L880.0 15.7 L880 48 L610 48 Z" fill="url(#fade)" opacity="0.8"/>
-  <path d="M610.0 35.3 L630.8 30.8 L651.5 25.4 L672.3 23.9 L693.1 26.4 L713.8 26.1 L734.6 23.3 L755.4 22.1 L776.2 19.5 L796.9 15.7 L817.7 15.7 L838.5 15.8 L859.2 15.9 L880.0 15.7" fill="none" stroke="#34d399" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
-    <animate attributeName="stroke-dashoffset" values="100;0;0;100" keyTimes="0;0.3;0.9;1" dur="9s" repeatCount="indefinite"/>
-  </path>
-  <circle cx="880.0" cy="15.7" r="3.5" fill="#34d399">
-    <animate attributeName="r" values="3;6;3" dur="1.6s" repeatCount="indefinite"/>
-  </circle>
-  <rect x="10" y="60" width="880" height="2" rx="1" fill="#ffffff" opacity="0.06"/>
-  <rect x="-160" y="60" width="160" height="2" rx="1" fill="url(#sweep)">
-    <animate attributeName="x" values="-160;900" dur="4s" repeatCount="indefinite"/>
-  </rect>
+    <g clip-path="url(#h-experience)"><text x="366.0" y="36" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="28" font-weight="700" class="f-green" textLength="168.0" lengthAdjust="spacing">Experience</text></g>
+    <g opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.0250;0.9688" dur="16s" repeatCount="indefinite"/>
+      <rect x="366.0" y="9.4" width="3.1" height="32.2" class="f-green">
+        <animate attributeName="x" calcMode="discrete" values="366.0;382.8;399.6;416.4;433.2;450.0;466.8;483.6;500.4;517.2;534.0;366.0" keyTimes="0;0.0250;0.0294;0.0338;0.0381;0.0425;0.0469;0.0513;0.0556;0.0600;0.0644;0.9688" dur="16s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect></g>
+  <line x1="40" y1="50" x2="860" y2="50" class="ln" stroke-width="1"/>
 </svg>

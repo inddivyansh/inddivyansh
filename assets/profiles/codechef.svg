@@ -1,32 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-label="CODECHEF 1570">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f2027"/><stop offset="0.55" stop-color="#203a43"/><stop offset="1" stop-color="#2c5364"/>
-    </linearGradient>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
-    </pattern>
-    <radialGradient id="corner" cx="1" cy="0" r="0.9">
-      <stop offset="0" stop-color="#e0a878" stop-opacity="0.3"/><stop offset="1" stop-color="#e0a878" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="round"><rect width="300" height="170" rx="14"/></clipPath>
-  </defs>
-  <g clip-path="url(#round)">
-    <rect width="300" height="170" fill="url(#bg)"/>
-    <rect width="300" height="170" fill="url(#grid)"/>
-    <rect width="300" height="170" fill="url(#corner)"/>
-    <rect x="-3" y="0" width="2" height="170" fill="#e0a878" opacity="0.18">
-      <animate attributeName="x" values="-3;300" dur="6s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <rect x="1" y="1" width="298" height="168" rx="14" fill="none" stroke="#e0a878" stroke-opacity="0.35"/>
-  <circle cx="26" cy="30" r="4" fill="#e0a878"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
-  <text x="38" y="34" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="12" letter-spacing="1.5" fill="#e0a878">CODECHEF</text>
-  <text x="22" y="82" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" fill="#ffffff">1570</text>
-  <text x="22" y="106" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d6e2ee">2 Star  ·  divyanshindian</text>
-  <text x="22" y="128" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8ea3b8">Global Rank 1621</text><text x="22" y="143" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8ea3b8">Starters 225</text>
-  <rect x="22" y="152" width="256" height="6" rx="3" fill="#ffffff" opacity="0.1"/>
-  <rect x="22" y="152" width="0" height="6" rx="3" fill="#e0a878">
-    <animate attributeName="width" values="0;134.0;134.0;0" keyTimes="0;0.3;0.9;1" dur="8s" repeatCount="indefinite"/>
-  </rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170" role="img" aria-label="CodeChef divyanshindian: rating 1570, 2 star">
+  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}.bd{stroke:#8b949e;stroke-opacity:.4}.track{fill:#8b949e;fill-opacity:.25}.cc2{fill:#1e7d22}.cf-pupil{fill:#008000}@media (prefers-color-scheme: dark){.cc2{fill:#3fb950}.cf-pupil{fill:#3fb950}}</style>
+  <rect x="0.5" y="0.5" width="439" height="169" rx="6" fill="none" class="bd"/>
+  <rect x="20" y="16" width="38" height="22" rx="4" class="cc2"/>
+  <text x="39" y="32" text-anchor="middle" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">2★</text>
+  <text x="68" y="33" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" class="tx">divyanshindian</text>
+  <text x="420" y="32" text-anchor="end" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="11" letter-spacing="1.5" class="mu">CODECHEF</text>
+  <line x1="20" y1="48" x2="420" y2="48" class="ln"/>
+  <text x="20" y="72" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">Rating</text>
+  <text x="20" y="104" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" class="cc2">1570</text>
+  <text x="240" y="72" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">No. of contests participated</text>
+  <text x="240" y="104" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" class="tx">—</text>
+  <text x="20" y="130" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" class="tx"><tspan font-weight="700">30 points</tspan> to 3★ (1600)<tspan class="mu">  /  ~1-2 contests (est.)</tspan></text>
+  <rect x="20" y="138" width="400" height="7" rx="3.5" class="track"/>
+  <rect x="20" y="138" width="340.0" height="7" rx="3.5" class="cc2"/>
+  <text x="20" y="160" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="10.5" class="mu">2★ 1400</text>
+  <text x="420" y="160" text-anchor="end" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="10.5" class="mu">3★ 1600</text>
 </svg>

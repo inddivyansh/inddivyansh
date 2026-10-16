@@ -1,32 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-label="CODEFORCES 1240">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f2027"/><stop offset="0.55" stop-color="#203a43"/><stop offset="1" stop-color="#2c5364"/>
-    </linearGradient>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
-    </pattern>
-    <radialGradient id="corner" cx="1" cy="0" r="0.9">
-      <stop offset="0" stop-color="#4aa8e8" stop-opacity="0.3"/><stop offset="1" stop-color="#4aa8e8" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="round"><rect width="300" height="170" rx="14"/></clipPath>
-  </defs>
-  <g clip-path="url(#round)">
-    <rect width="300" height="170" fill="url(#bg)"/>
-    <rect width="300" height="170" fill="url(#grid)"/>
-    <rect width="300" height="170" fill="url(#corner)"/>
-    <rect x="-3" y="0" width="2" height="170" fill="#4aa8e8" opacity="0.18">
-      <animate attributeName="x" values="-3;300" dur="6s" repeatCount="indefinite"/>
-    </rect>
-  </g>
-  <rect x="1" y="1" width="298" height="168" rx="14" fill="none" stroke="#4aa8e8" stroke-opacity="0.35"/>
-  <circle cx="26" cy="30" r="4" fill="#4aa8e8"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
-  <text x="38" y="34" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="12" letter-spacing="1.5" fill="#4aa8e8">CODEFORCES</text>
-  <text x="22" y="82" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" fill="#ffffff">1240</text>
-  <text x="22" y="106" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d6e2ee">Pupil  ·  divyansh.indian1</text>
-  <text x="22" y="128" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8ea3b8">Competitive programming</text>
-  <rect x="22" y="152" width="256" height="6" rx="3" fill="#ffffff" opacity="0.1"/>
-  <rect x="22" y="152" width="0" height="6" rx="3" fill="#4aa8e8">
-    <animate attributeName="width" values="0;105.8;105.8;0" keyTimes="0;0.3;0.9;1" dur="8s" repeatCount="indefinite"/>
-  </rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170" role="img" aria-label="Codeforces divyansh.indian1: Pupil, rating 1240">
+  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}.bd{stroke:#8b949e;stroke-opacity:.4}.track{fill:#8b949e;fill-opacity:.25}.cc2{fill:#1e7d22}.cf-pupil{fill:#008000}@media (prefers-color-scheme: dark){.cc2{fill:#3fb950}.cf-pupil{fill:#3fb950}}</style>
+  <rect x="0.5" y="0.5" width="439" height="169" rx="6" fill="none" class="bd"/>
+  <text x="20" y="32" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" class="cf-pupil">Pupil</text>
+  <text x="420" y="30" text-anchor="end" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="11" letter-spacing="1.5" class="mu">CODEFORCES</text>
+  <text x="20" y="64" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="26" font-weight="700" class="cf-pupil">divyansh.indian1</text>
+  <line x1="20" y1="80" x2="420" y2="80" class="ln"/>
+  <text x="20" y="108" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" class="mu">Contest rating:</text><text x="190" y="108" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" class="cf-pupil">1240</text><text x="20" y="132" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" class="mu">Rank:</text><text x="190" y="132" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" class="cf-pupil">Pupil</text><text x="20" y="156" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" class="mu">Contests participated:</text><text x="190" y="156" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" class="tx">—</text>
 </svg>
