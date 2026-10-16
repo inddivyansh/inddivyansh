@@ -419,102 +419,86 @@ def achievements() -> None:
 
 
 # ----------------------------------------------------------------------------
-# CodeChef: Minimal card (Username, Logo, Current rating big (max small),
-#           Title 2★, Contests count, Milestone progress)
+# CodeChef: Native profile-style card (black, rank, username, rating, contests)
 # ----------------------------------------------------------------------------
 def codechef() -> None:
     c = CODECHEF
-    W, H = 440, 136
-    stars = f"{c['stars']}★"
-    nxt = f"{c['next_stars']}★"
-    lo = 1400
-    hi = c["next_rating"]
-    frac = max(0.0, min(1.0, (c["rating"] - lo) / (hi - lo)))
-    gap = hi - c["rating"]
-    bw = 404
+    W, H = 880, 130
+    stars = f"{c['stars']}\u2605"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="CodeChef {c['user']}: rating {c['rating']}, {stars}">
   <style>
-    {THEME_CSS}
-    .cc-badge {{ fill: #1E7D22; }}
-    .cc-green {{ fill: #1E7D22; }}
-    @media (prefers-color-scheme: dark) {{
-      .cc-green {{ fill: #3fb950; }}
-      .cc-badge {{ fill: #238636; }}
+    .bg {{ fill: #0d1117; }}
+    .border {{ stroke: #30363d; }}
+    .rank {{ fill: #e68000; font-family: {SANS}; font-size: 15px; font-weight: 700; }}
+    .username {{ fill: #e68000; font-family: {SANS}; font-size: 28px; font-weight: 800; }}
+    .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 600; }}
+    .hi {{ fill: #e68000; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .plt {{ fill: #6e7681; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
+    .dv {{ stroke: #21262d; }}
+    @media (prefers-color-scheme: light) {{
+      .bg {{ fill: #ffffff; }} .border {{ stroke: #d0d7de; }}
+      .rank {{ fill: #c25400; }} .username {{ fill: #c25400; }} .hi {{ fill: #c25400; }}
+      .lbl {{ fill: #57606a; }} .val {{ fill: #1f2328; }} .plt {{ fill: #8c959f; }} .dv {{ stroke: #d0d7de; }}
     }}
   </style>
-  <!-- Minimal clean frame, transparent background -->
-  <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="8" fill="none" class="ln"/>
-
-  <!-- Header: Title badge + Username + CodeChef Logo -->
-  <rect x="18" y="14" width="32" height="20" rx="4" class="cc-badge"/>
-  <text x="34" y="28.5" text-anchor="middle" font-family="{SANS}" font-size="12" font-weight="700" fill="#ffffff">{stars}</text>
-  <text x="58" y="29" font-family="{SANS}" font-size="16" font-weight="700" class="tx">{escape(c['user'])}</text>
-  <text x="{W - 18}" y="28" text-anchor="end" font-family="{MONO}" font-size="11" font-weight="700" letter-spacing="1.5" class="mu">CODECHEF</text>
-
-  <line x1="18" y1="40" x2="{W - 18}" y2="40" class="ln"/>
-
-  <!-- Stats: Current rating BIG (max small) & Contests -->
-  <text x="18" y="72" font-family="{SANS}" font-size="28" font-weight="800" class="cc-green">{c['rating']} <tspan font-size="13" font-weight="600" class="mu">(max {c['rating']})</tspan></text>
-  <text x="{W - 18}" y="72" text-anchor="end" font-family="{SANS}" font-size="14" font-weight="700" class="tx">{c['contests']} <tspan font-size="12" font-weight="500" class="mu">contests</tspan></text>
-
-  <!-- Next Milestone Progress -->
-  <text x="18" y="94" font-family="{SANS}" font-size="11.5" class="tx"><tspan font-weight="700" class="cc-green">{gap} pts</tspan> to {nxt} ({hi})</text>
-  <rect x="18" y="102" width="{bw}" height="6" rx="3" fill="#8b949e" fill-opacity="0.2"/>
-  <rect x="18" y="102" width="{bw * frac:.1f}" height="6" rx="3" class="cc-badge"/>
-  <text x="18" y="122" font-family="{SANS}" font-size="9.5" class="mu">{stars} 1400</text>
-  <text x="{W - 18}" y="122" text-anchor="end" font-family="{SANS}" font-size="9.5" class="mu">{nxt} {hi}</text>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" class="bg"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="17" width="5" height="13" rx="1" fill="#e68000"/>
+  <rect x="30" y="14" width="5" height="16" rx="1" fill="#e68000" opacity="0.7"/>
+  <rect x="38" y="19" width="5" height="11" rx="1" fill="#e68000" opacity="0.5"/>
+  <text x="52" y="29" class="plt">CODECHEF</text>
+  <text x="22" y="58" class="rank">{stars}</text>
+  <text x="22" y="92" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="102" x2="858" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="120" class="lbl">Contest rating: </text>
+  <text x="116" y="120" class="hi">{c['rating']}</text>
+  <text x="152" y="120" class="lbl"> (max. {stars}, {c['rating']})</text>
+  <text x="500" y="120" class="lbl">Contests: </text>
+  <text x="554" y="120" class="val">{c['contests']}</text>
 </svg>"""
     write(ASSETS / "profiles" / "codechef.svg", svg)
 
 
 # ----------------------------------------------------------------------------
-# Codeforces: Minimal card (Username, Logo, Current rating big (max small),
-#             Title Pupil, Contests count, Milestone progress)
+# Codeforces: Native profile-style card (black, rank, username, rating, contests)
 # ----------------------------------------------------------------------------
 def codeforces() -> None:
     c = CODEFORCES
-    W, H = 440, 136
-    bw = 404
-    lo, hi = 1200, 1400
-    frac = max(0.0, min(1.0, (c["rating"] - lo) / (hi - lo)))
-    gap = hi - c["rating"]
+    W, H = 880, 130
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Codeforces {c['user']}: {c['rank']}, rating {c['rating']}">
   <style>
-    {THEME_CSS}
-    .cf-pupil {{ fill: #008000; }}
-    .cf-badge {{ fill: #008000; }}
-    @media (prefers-color-scheme: dark) {{
-      .cf-pupil {{ fill: #3fb950; }}
-      .cf-badge {{ fill: #238636; }}
+    .bg {{ fill: #0d1117; }}
+    .border {{ stroke: #30363d; }}
+    .rank {{ fill: #77bb41; font-family: {SANS}; font-size: 15px; font-weight: 700; }}
+    .username {{ fill: #77bb41; font-family: {SANS}; font-size: 28px; font-weight: 800; }}
+    .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 600; }}
+    .hi {{ fill: #77bb41; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .plt {{ fill: #6e7681; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
+    .dv {{ stroke: #21262d; }}
+    @media (prefers-color-scheme: light) {{
+      .bg {{ fill: #ffffff; }} .border {{ stroke: #d0d7de; }}
+      .rank {{ fill: #008000; }} .username {{ fill: #008000; }} .hi {{ fill: #008000; }}
+      .lbl {{ fill: #57606a; }} .val {{ fill: #1f2328; }} .plt {{ fill: #8c959f; }} .dv {{ stroke: #d0d7de; }}
     }}
   </style>
-  <!-- Minimal clean frame, transparent background -->
-  <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="8" fill="none" class="ln"/>
-
-  <!-- Native Codeforces 3-bar logo + Brand & Title/Rank -->
-  <rect x="18" y="18" width="4" height="12" rx="1" fill="#F3B431"/>
-  <rect x="24" y="14" width="4" height="16" rx="1" fill="#2C65A4"/>
-  <rect x="30" y="16" width="4" height="14" rx="1" fill="#C4362E"/>
-  <text x="42" y="27" font-family="{MONO}" font-size="11" font-weight="700" letter-spacing="1.2" class="mu">CODEFORCES</text>
-  <text x="{W - 18}" y="27" text-anchor="end" font-family="{SANS}" font-size="13" font-weight="700" class="cf-pupil">{escape(c['rank'])}</text>
-
-  <line x1="18" y1="38" x2="{W - 18}" y2="38" class="ln"/>
-
-  <!-- Username -->
-  <text x="18" y="58" font-family="{SANS}" font-size="16" font-weight="700" class="cf-pupil">{escape(c['user'])}</text>
-
-  <!-- Stats: Current rating BIG (max small) & Contests -->
-  <text x="18" y="86" font-family="{SANS}" font-size="28" font-weight="800" class="cf-pupil">{c['rating']} <tspan font-size="13" font-weight="600" class="mu">(max {c['max_rating']})</tspan></text>
-  <text x="{W - 18}" y="86" text-anchor="end" font-family="{SANS}" font-size="14" font-weight="700" class="tx">{c['contests']} <tspan font-size="12" font-weight="500" class="mu">contests</tspan></text>
-
-  <!-- Next Milestone Progress -->
-  <text x="18" y="106" font-family="{SANS}" font-size="11.5" class="tx"><tspan font-weight="700" class="cf-pupil">{gap} pts</tspan> to Specialist ({hi})</text>
-  <rect x="18" y="112" width="{bw}" height="6" rx="3" fill="#8b949e" fill-opacity="0.2"/>
-  <rect x="18" y="112" width="{bw * frac:.1f}" height="6" rx="3" class="cf-badge"/>
-  <text x="18" y="128" font-family="{SANS}" font-size="9.5" class="mu">Pupil {lo}</text>
-  <text x="{W - 18}" y="128" text-anchor="end" font-family="{SANS}" font-size="9.5" class="mu">Specialist {hi}</text>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" class="bg"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="20" width="5" height="10" rx="1" fill="#F3B431"/>
+  <rect x="30" y="15" width="5" height="15" rx="1" fill="#3065c0"/>
+  <rect x="38" y="17" width="5" height="13" rx="1" fill="#C0392B"/>
+  <text x="52" y="29" class="plt">CODEFORCES</text>
+  <text x="22" y="58" class="rank">{escape(c['rank'])}</text>
+  <text x="22" y="92" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="102" x2="858" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="120" class="lbl">Contest rating: </text>
+  <text x="116" y="120" class="hi">{c['rating']}</text>
+  <text x="152" y="120" class="lbl"> (max. {escape(c['rank'].lower())}, {c['max_rating']})</text>
+  <text x="500" y="120" class="lbl">Contests: </text>
+  <text x="554" y="120" class="val">{c['contests']}</text>
 </svg>"""
     write(ASSETS / "profiles" / "codeforces.svg", svg)
 

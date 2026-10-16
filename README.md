@@ -2,8 +2,6 @@
 
 <img src="assets/banners/hero.svg" width="100%" alt="Divyansh Nagar — AI · Data Science · Backend · Competitive Programming"/>
 
-<br/>
-
 <a href="https://diivyportfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-diivyportfolio.vercel.app-0A66C2?style=flat-square&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 &nbsp;
 <a href="https://www.linkedin.com/in/diivyaix/"><img src="https://img.shields.io/badge/LINKEDIN-diivyaix-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -184,70 +182,58 @@
 
 <br/>
 
-<table align="center" width="100%" cellpadding="10">
-<tr>
+**Languages**
 
-<td width="50%" valign="top" align="center">
-<h4>Languages</h4>
-<br/>
 <img src="https://skillicons.dev/icons?i=cpp,py,java,js,ts&theme=dark" alt="C++, Python, Java, JavaScript, TypeScript"/>
-</td>
 
-<td width="50%" valign="top" align="center">
-<h4>Frameworks &amp; Backend</h4>
 <br/>
+
+**Frameworks &amp; Backend**
+
 <img src="https://skillicons.dev/icons?i=fastapi,flask,react,vite,nextjs&theme=dark" alt="FastAPI, Flask, React, Vite, Next.js"/>
-</td>
 
-</tr>
-<tr>
-
-<td width="50%" valign="top" align="center">
-<h4>Machine Learning &amp; Data</h4>
 <br/>
+
+**Machine Learning &amp; Data**
+
 <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" alt="PyTorch, TensorFlow, OpenCV"/>
-<br/><br/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="26" alt="Pandas"/>
-&nbsp;
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="26" alt="NumPy"/>
-&nbsp;
-<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="26" alt="SciPy"/>
-&nbsp;
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="26" alt="scikit-learn"/>
-</td>
 
-<td width="50%" valign="top" align="center">
-<h4>Databases &amp; Storage</h4>
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="28" alt="Pandas"/>
+&nbsp;
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="28" alt="NumPy"/>
+&nbsp;
+<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="28" alt="SciPy"/>
+&nbsp;
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="28" alt="scikit-learn"/>
+
 <br/>
+
+**Databases &amp; Storage**
+
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,supabase&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Supabase"/>
-<br/><br/>
-<img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="26" alt="Neo4j"/>
-</td>
 
-</tr>
-<tr>
+<img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="28" alt="Neo4j"/>
+&nbsp;
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" height="28" alt="Redis"/>
 
-<td width="50%" valign="top" align="center">
-<h4>DevOps &amp; Tools</h4>
 <br/>
+
+**DevOps &amp; Tools**
+
 <img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,postman&theme=dark" alt="Docker, Git, GitHub, GitHub Actions, Linux, Postman"/>
-</td>
 
-<td width="50%" valign="top" align="center">
-<h4>Cloud &amp; Deployment</h4>
 <br/>
-<img src="https://skillicons.dev/icons?i=aws,gcp,vercel&theme=dark" alt="AWS, Google Cloud, Vercel"/>
-</td>
 
-</tr>
-</table>
+**Cloud &amp; Deployment**
+
+<img src="https://skillicons.dev/icons?i=aws,gcp,vercel&theme=dark" alt="AWS, Google Cloud, Vercel"/>
 
 <br/>
 
 <img src="https://img.shields.io/badge/Generative%20AI-RAG%20%7C%20Gemini%20%7C%20LLM%20APIs%20%7C%20Prompt%20Engineering-8E75B2?style=flat-square" alt="Generative AI: RAG, Gemini, LLM APIs, Prompt Engineering"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost%20%7C%20Random%20Forest%20%7C%20Gradient%20Boosting-EB5B2F?style=flat-square" alt="Machine Learning: XGBoost, Random Forest, Gradient Boosting"/>
-<br/><br/>
+
 <img src="https://img.shields.io/badge/Data-Time%20Series%20%7C%20EDA%20%7C%20Feature%20Engineering-150458?style=flat-square" alt="Data: Time Series, EDA, Feature Engineering"/>
 &nbsp;
 <img src="https://img.shields.io/badge/Backend-REST%20APIs%20%7C%20Pydantic%20%7C%20SQLAlchemy%20%7C%20Auth-009688?style=flat-square" alt="Backend: REST APIs, Pydantic, SQLAlchemy, Auth"/>
@@ -292,9 +278,9 @@
 
 <div align="center">
 
-<a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="49%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
-&nbsp;
-<a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="49%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
+<a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="48%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
+&nbsp;&nbsp;
+<a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="48%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
 
 <br/><br/>
 
@@ -358,7 +344,7 @@ I'm open to **internships and full-time opportunities**, and always happy to con
 &nbsp;
 <a href="https://diivyportfolio.vercel.app/"><img src="https://img.shields.io/badge/PORTFOLIO-Visit-0A66C2?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 
-<br/><br/>
+<br/>
 
 <img src="assets/banners/ending.svg" width="100%" alt="Rotating quotes: Talk is cheap, show me the code. Code. Fail. Learn. Repeat."/>
 
