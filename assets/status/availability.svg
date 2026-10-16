@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="40" viewBox="0 0 900 40" role="img" aria-label="Open to internships and full-time opportunities">
-  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}</style>
-  <circle cx="217.4" cy="21" r="5" class="f-green"/>
-  <circle cx="217.4" cy="21" r="5" class="s-green" fill="none" stroke-width="2">
-    <animate attributeName="r" values="5;13" dur="1.8s" repeatCount="indefinite"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="32" viewBox="0 0 900 32" role="img" aria-label="Open to internships and full-time opportunities">
+  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.f-cyan{fill:#0891b2}.s-cyan{stroke:#0891b2}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.25}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.f-cyan{fill:#22d3ee}.s-cyan{stroke:#22d3ee}.tx{fill:#e6edf3}.mu{fill:#8b949e}}</style>
+  <circle cx="245.6" cy="16" r="4.5" class="f-green"/>
+  <circle cx="245.6" cy="16" r="4.5" class="s-green" fill="none" stroke-width="1.5">
+    <animate attributeName="r" values="4.5;11" dur="1.8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.8;0" dur="1.8s" repeatCount="indefinite"/>
   </circle>
-  <text x="237.4" y="27" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="16" font-weight="700" class="f-green" textLength="451.2" lengthAdjust="spacing">Open to internships and full-time opportunities</text>
+  <text x="261.6" y="21" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="14" font-weight="600" class="f-green" textLength="394.8" lengthAdjust="spacing">Open to internships and full-time opportunities</text>
 </svg>

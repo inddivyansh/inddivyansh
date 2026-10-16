@@ -1,18 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="440" height="170" viewBox="0 0 440 170" role="img" aria-label="CodeChef divyanshindian: rating 1570, 2 star">
-  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}.bd{stroke:#8b949e;stroke-opacity:.4}.track{fill:#8b949e;fill-opacity:.25}.cc2{fill:#1e7d22}.cf-pupil{fill:#008000}@media (prefers-color-scheme: dark){.cc2{fill:#3fb950}.cf-pupil{fill:#3fb950}}</style>
-  <rect x="0.5" y="0.5" width="439" height="169" rx="6" fill="none" class="bd"/>
-  <rect x="20" y="16" width="38" height="22" rx="4" class="cc2"/>
-  <text x="39" y="32" text-anchor="middle" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="700" fill="#fff">2★</text>
-  <text x="68" y="33" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="700" class="tx">divyanshindian</text>
-  <text x="420" y="32" text-anchor="end" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="11" letter-spacing="1.5" class="mu">CODECHEF</text>
-  <line x1="20" y1="48" x2="420" y2="48" class="ln"/>
-  <text x="20" y="72" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">Rating</text>
-  <text x="20" y="104" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" class="cc2">1570</text>
-  <text x="240" y="72" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">No. of contests participated</text>
-  <text x="240" y="104" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="800" class="tx">—</text>
-  <text x="20" y="130" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" class="tx"><tspan font-weight="700">30 points</tspan> to 3★ (1600)<tspan class="mu">  /  ~1-2 contests (est.)</tspan></text>
-  <rect x="20" y="138" width="400" height="7" rx="3.5" class="track"/>
-  <rect x="20" y="138" width="340.0" height="7" rx="3.5" class="cc2"/>
-  <text x="20" y="160" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="10.5" class="mu">2★ 1400</text>
-  <text x="420" y="160" text-anchor="end" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="10.5" class="mu">3★ 1600</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="155" viewBox="0 0 440 155" role="img" aria-label="CodeChef divyanshindian: rating 1570, 2★">
+  <style>
+    .f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.f-cyan{fill:#0891b2}.s-cyan{stroke:#0891b2}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.25}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.f-cyan{fill:#22d3ee}.s-cyan{stroke:#22d3ee}.tx{fill:#e6edf3}.mu{fill:#8b949e}}
+    .cc-badge { fill: #1E7D22; }
+    .cc-green { fill: #1E7D22; }
+    @media (prefers-color-scheme: dark) {
+      .cc-green { fill: #3fb950; }
+      .cc-badge { fill: #238636; }
+    }
+  </style>
+  <!-- Minimal clean frame, transparent background -->
+  <rect x="0.5" y="0.5" width="439" height="154" rx="8" fill="none" class="ln"/>
+
+  <!-- Native CodeChef Profile Header -->
+  <rect x="20" y="16" width="34" height="20" rx="4" class="cc-badge"/>
+  <text x="37" y="30.5" text-anchor="middle" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">2★</text>
+  <text x="62" y="31" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="16" font-weight="700" class="tx">divyanshindian</text>
+  <text x="180" y="30.5" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="12" class="mu">(Div 3)</text>
+  <text x="420" y="30" text-anchor="end" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="11" letter-spacing="1.5" class="mu">CODECHEF</text>
+
+  <line x1="20" y1="44" x2="420" y2="44" class="ln"/>
+
+  <!-- Native Stats Layout -->
+  <text x="20" y="64" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">Contest Rating</text>
+  <text x="20" y="94" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="800" class="cc-green">1570</text>
+  <text x="20" y="108" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11" class="mu">(Highest Rating 1570)</text>
+
+  <text x="235" y="64" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">Contests Participated</text>
+  <text x="235" y="94" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="800" class="tx">19</text>
+  <text x="235" y="108" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11" class="mu">Starters 260 &nbsp;•&nbsp; Rank 637</text>
+
+  <!-- Progress to next star -->
+  <text x="20" y="127" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="tx"><tspan font-weight="700" class="cc-green">30 pts</tspan> to 3★ (1600)<tspan class="mu">  /  ~1-2 contests (est.)</tspan></text>
+  <rect x="20" y="134" width="396" height="6" rx="3" fill="#8b949e" fill-opacity="0.2"/>
+  <rect x="20" y="134" width="336.6" height="6" rx="3" class="cc-badge"/>
+  <text x="20" y="149" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="9.5" class="mu">2★ 1400</text>
+  <text x="420" y="149" text-anchor="end" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="9.5" class="mu">3★ 1600</text>
 </svg>

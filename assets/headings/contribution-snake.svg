@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="54" viewBox="0 0 900 54" role="img" aria-label="Contribution Snake">
-  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.35}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.tx{fill:#e6edf3}.mu{fill:#8b949e}}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="36" viewBox="0 0 600 36" role="img" aria-label="Contribution Snake">
+  <style>.f-blue{fill:#0969da}.s-blue{stroke:#0969da}.f-green{fill:#1a7f37}.s-green{stroke:#1a7f37}.f-purple{fill:#8250df}.s-purple{stroke:#8250df}.f-orange{fill:#bc4c00}.s-orange{stroke:#bc4c00}.f-pink{fill:#bf3989}.s-pink{stroke:#bf3989}.f-cyan{fill:#0891b2}.s-cyan{stroke:#0891b2}.tx{fill:#1f2328}.mu{fill:#656d76}.ln{stroke:#8b949e;stroke-opacity:.25}@media (prefers-color-scheme: dark){.f-blue{fill:#58a6ff}.s-blue{stroke:#58a6ff}.f-green{fill:#3fb950}.s-green{stroke:#3fb950}.f-purple{fill:#bc8cff}.s-purple{stroke:#bc8cff}.f-orange{fill:#f0883e}.s-orange{stroke:#f0883e}.f-pink{fill:#f778ba}.s-pink{stroke:#f778ba}.f-cyan{fill:#22d3ee}.s-cyan{stroke:#22d3ee}.tx{fill:#e6edf3}.mu{fill:#8b949e}}</style>
   
-    <clipPath id="h-contribution-snake"><rect x="298.8" y="8.0" width="0" height="42.0">
-      <animate attributeName="width" calcMode="discrete" values="0.0;16.8;33.6;50.4;67.2;84.0;100.8;117.6;134.4;151.2;168.0;184.8;201.6;218.4;235.2;252.0;268.8;285.6;302.4;0.0" keyTimes="0;0.0250;0.0294;0.0338;0.0381;0.0425;0.0469;0.0513;0.0556;0.0600;0.0644;0.0688;0.0731;0.0775;0.0819;0.0863;0.0906;0.0950;0.0994;0.9688" dur="16s" repeatCount="indefinite"/>
+    <clipPath id="h-contribution-snake"><rect x="168.0" y="4.0" width="0" height="33.0">
+      <animate attributeName="width" calcMode="discrete" values="0.0;13.2;26.4;39.6;52.8;66.0;79.2;92.4;105.6;118.8;132.0;145.2;158.4;171.6;184.8;198.0;211.2;224.4;237.6;250.8;264.0;0.0" keyTimes="0;0.0250;0.0291;0.0331;0.0372;0.0413;0.0453;0.0494;0.0534;0.0575;0.0616;0.0656;0.0697;0.0738;0.0778;0.0819;0.0859;0.0900;0.0941;0.0981;0.1022;0.9688" dur="16s" repeatCount="indefinite"/>
     </rect></clipPath>
-    <g clip-path="url(#h-contribution-snake)"><text x="298.8" y="36" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="28" font-weight="700" class="f-orange" textLength="302.4" lengthAdjust="spacing">Contribution Snake</text></g>
+    <g clip-path="url(#h-contribution-snake)"><text x="168.0" y="26" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="22" font-weight="700" class="f-orange" textLength="264.0" lengthAdjust="spacing">&gt; Contribution Snake</text></g>
     <g opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;0.0250;0.9688" dur="16s" repeatCount="indefinite"/>
-      <rect x="298.8" y="9.4" width="3.1" height="32.2" class="f-orange">
-        <animate attributeName="x" calcMode="discrete" values="298.8;315.6;332.4;349.2;366.0;382.8;399.6;416.4;433.2;450.0;466.8;483.6;500.4;517.2;534.0;550.8;567.6;584.4;601.2;298.8" keyTimes="0;0.0250;0.0294;0.0338;0.0381;0.0425;0.0469;0.0513;0.0556;0.0600;0.0644;0.0688;0.0731;0.0775;0.0819;0.0863;0.0906;0.0950;0.0994;0.9688" dur="16s" repeatCount="indefinite"/>
+      <rect x="168.0" y="5.1" width="2.4" height="25.3" class="f-orange">
+        <animate attributeName="x" calcMode="discrete" values="168.0;181.2;194.4;207.6;220.8;234.0;247.2;260.4;273.6;286.8;300.0;313.2;326.4;339.6;352.8;366.0;379.2;392.4;405.6;418.8;432.0;168.0" keyTimes="0;0.0250;0.0291;0.0331;0.0372;0.0413;0.0453;0.0494;0.0534;0.0575;0.0616;0.0656;0.0697;0.0738;0.0778;0.0819;0.0859;0.0900;0.0941;0.0981;0.1022;0.9688" dur="16s" repeatCount="indefinite"/>
         <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
       </rect></g>
-  <line x1="40" y1="50" x2="860" y2="50" class="ln" stroke-width="1"/>
 </svg>
