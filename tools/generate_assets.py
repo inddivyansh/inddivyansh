@@ -8,12 +8,13 @@ Generates the SVG assets used by the profile README.
 Output layout:
   assets/banners/        hero.svg (floating stickers + typewriter), ending.svg
   assets/headings/       pure typewriter heading SVGs (transparent, NO cards)
+  assets/about/          terminal.svg (animated developer terminal)
   assets/status/         availability.svg
   assets/achievements/   achievements.svg
   assets/profiles/       codechef.svg, codeforces.svg (native platform UI)
   assets/snake/          snake.svg (from generate_snake.py)
 
-Every file is self-contained SVG with transparent backgrounds.
+Every file is self-contained SVG with valid XML entities and transparent backgrounds.
 Colours adapt to GitHub light / dark mode through `prefers-color-scheme`.
 """
 import shutil
@@ -172,7 +173,7 @@ def hero() -> None:
         ev += [(hold_end + j * 0.018, n - 1 - j) for j in range(n)]
         parts.append(typed(f"hr{i}", display_role, xs, 118, fs, "f-cyan", T, ev, weight=600))
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Divyansh Nagar - AI, Backend & Competitive Programming">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Divyansh Nagar - AI, Backend &amp; Competitive Programming">
   <defs>
     <linearGradient id="name-grad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#38bdf8"/>
@@ -221,7 +222,6 @@ def hero() -> None:
   <g class="sticker" filter="url(#sticker-glow)">
     <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4.8s" repeatCount="indefinite"/>
     <rect x="818" y="24" width="46" height="46" rx="12" fill="#064e3b" fill-opacity="0.7" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.6"/>
-    <!-- Rocket vector -->
     <path d="M848 37c-3-3-8-4-13-2l-3 3 7 7 3-3c2-5 1-10-2-13l8-8c1-1 3-1 4 0s1 3 0 4l-4 4z" fill="#34d399"/>
     <path d="M832 45l-3 7 4 4 7-3-8-8z" fill="#6ee7b7"/>
     <circle cx="839" cy="43" r="1.5" fill="#064e3b"/>
@@ -246,12 +246,88 @@ def hero() -> None:
   <!-- Center Hero Typography (Transparent, no card) -->
   <text x="{W / 2}" y="32" text-anchor="middle" font-family="{MONO}" font-size="13" font-weight="600" class="f-blue" letter-spacing="2">&lt;DEVELOPER / PORTFOLIO&gt;</text>
   <text x="{W / 2}" y="76" text-anchor="middle" font-family="{SANS}" font-size="{fs_name}" font-weight="900" fill="url(#name-grad)">{name}</text>
-  <text x="{W / 2}" y="98" text-anchor="middle" font-family="{SANS}" font-size="13" font-weight="600" class="mu" letter-spacing="1.2">IIIT PUNE '27 &nbsp;•&nbsp; AI &amp; ML &nbsp;•&nbsp; BACKEND &nbsp;•&nbsp; COMPETITIVE PROGRAMMING</text>
+  <text x="{W / 2}" y="98" text-anchor="middle" font-family="{SANS}" font-size="13" font-weight="600" class="mu" letter-spacing="1.2">IIIT PUNE '27  •  AI &amp; ML  •  BACKEND  •  COMPETITIVE PROGRAMMING</text>
 
   <!-- Animated Typewriter Role -->
   {''.join(parts)}
 </svg>"""
     write(ASSETS / "banners" / "hero.svg", svg)
+
+
+# ----------------------------------------------------------------------------
+# About Me: animated developer terminal (authentic macOS / Linux terminal)
+# ----------------------------------------------------------------------------
+def terminal() -> None:
+    W = 860
+    LH, y0 = 23, 76
+    G, FG, MU, BL = "#3fb950", "#e6edf3", "#8b949e", "#58a6ff"
+    script = [
+        ("cmd", "whoami"),
+        ("out", [("Divyansh Nagar", FG), ("  /  B.Tech CSE, IIIT Pune (2023 - 2027)", MU)]),
+        ("cmd", "cat about.txt"),
+        ("out", [("I turn machine learning and backend engineering into products:", FG)]),
+        ("out", [("RAG document intelligence, real-time AI security, satellite data.", FG)]),
+        ("out", [("300+ DSA problems solved, mostly in ", FG), ("C++", BL), (".", FG)]),
+        ("cmd", "ls focus/"),
+        ("out", [("generative-ai/  ", BL), ("backend-apis/  ", BL), ("ml-time-series/  ", BL), ("ai-security/", BL)]),
+        ("cmd", "echo $STATUS"),
+        ("out", [("open to ", FG), ("internships", G), (" and ", FG), ("full-time opportunities", G)]),
+        ("idle",),
+    ]
+    H = y0 + len(script) * LH + 14
+    fs = 14
+    cw = fs * 0.6
+    T = 30.0
+    t = 0.8
+    rows, defs = [], []
+    for i, item in enumerate(script):
+        y = y0 + i * LH
+        if item[0] == "cmd":
+            cmd = item[1]
+            n = len(cmd)
+            px = 28 + 2 * cw
+            ev = type_events(t, n, 0.09)
+            keys = kt([0] + [e[0] / T for e in ev])
+            counts = [0] + [c for _, c in ev]
+            widths = ";".join(f"{c * cw:.1f}" for c in counts)
+            xs = ";".join(f"{px + c * cw:.1f}" for c in counts)
+            nxt = ev[-1][0] + 0.55
+            defs.append(
+                f'<clipPath id="c{i}"><rect x="{px:.1f}" y="{y - fs}" width="0" height="{fs * 1.5:.1f}">'
+                f'<animate attributeName="width" calcMode="discrete" values="{widths}" keyTimes="{keys}" dur="{T}s" repeatCount="indefinite"/></rect></clipPath>'
+            )
+            rows.append(
+                f'<text x="28" y="{y}" font-family="{MONO}" font-size="{fs}" fill="{G}" font-weight="700" opacity="0">$'
+                f'<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;{(t - 0.05) / T:.4f}" dur="{T}s" repeatCount="indefinite"/></text>'
+                f'<g clip-path="url(#c{i})"><text x="{px:.1f}" y="{y}" font-family="{MONO}" font-size="{fs}" fill="{FG}" textLength="{n * cw:.1f}" lengthAdjust="spacing">{escape(cmd)}</text></g>'
+                f'<g opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1;0" keyTimes="0;{t / T:.4f};{nxt / T:.4f}" dur="{T}s" repeatCount="indefinite"/>'
+                f'<rect x="{px:.1f}" y="{y - 12}" width="8" height="16" fill="{FG}" opacity="0.85">'
+                f'<animate attributeName="x" calcMode="discrete" values="{xs}" keyTimes="{keys}" dur="{T}s" repeatCount="indefinite"/></rect></g>'
+            )
+            t = nxt
+        elif item[0] == "out":
+            spans = "".join(f'<tspan fill="{c}">{escape(s)}</tspan>' for s, c in item[1])
+            rows.append(
+                f'<text x="28" y="{y}" font-family="{MONO}" font-size="{fs}" opacity="0" xml:space="preserve">{spans}'
+                f'<animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;{t / T:.4f}" dur="{T}s" repeatCount="indefinite"/></text>'
+            )
+            t += 0.55
+        else:
+            rows.append(
+                f'<g opacity="0"><animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;{t / T:.4f}" dur="{T}s" repeatCount="indefinite"/>'
+                f'<text x="28" y="{y}" font-family="{MONO}" font-size="{fs}" fill="{G}" font-weight="700">$</text>'
+                f'<rect x="{28 + 2 * cw:.1f}" y="{y - 12}" width="8" height="16" fill="{FG}" opacity="0.85"><animate attributeName="opacity" values="0.85;0;0.85" dur="1s" repeatCount="indefinite"/></rect></g>'
+            )
+            t += 3
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Terminal: whoami, about, focus areas and availability">
+  <defs>{''.join(defs)}</defs>
+  <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <path d="M0.5 36H{W - 0.5}" stroke="#30363d"/>
+  <circle cx="22" cy="19" r="5.5" fill="#ff5f56"/><circle cx="42" cy="19" r="5.5" fill="#ffbd2e"/><circle cx="62" cy="19" r="5.5" fill="#27c93f"/>
+  <text x="{W / 2}" y="23" text-anchor="middle" font-family="{MONO}" font-size="12" fill="{MU}">divyansh@iiit-pune: ~</text>
+  {''.join(rows)}
+</svg>"""
+    write(ASSETS / "about" / "terminal.svg", svg)
 
 
 # ----------------------------------------------------------------------------
@@ -349,7 +425,7 @@ def codechef() -> None:
 
   <text x="235" y="64" font-family="{SANS}" font-size="11.5" class="mu">Contests Participated</text>
   <text x="235" y="94" font-family="{SANS}" font-size="32" font-weight="800" class="tx">{c['contests']}</text>
-  <text x="235" y="108" font-family="{SANS}" font-size="11" class="mu">Starters 260 &nbsp;•&nbsp; Rank 637</text>
+  <text x="235" y="108" font-family="{SANS}" font-size="11" class="mu">Starters 260  •  Rank 637</text>
 
   <!-- Progress to next star -->
   <text x="20" y="127" font-family="{SANS}" font-size="11.5" class="tx"><tspan font-weight="700" class="cc-green">{gap} pts</tspan> to {nxt} ({hi})<tspan class="mu">  /  {c['contests_needed']} contests (est.)</tspan></text>
@@ -402,7 +478,7 @@ def codeforces() -> None:
   <text x="165" y="124" font-family="{SANS}" font-size="12" font-weight="700" class="tx">{c['contests']}</text>
   <text x="195" y="124" font-family="{SANS}" font-size="11" class="mu">(latest: Educational Round 195)</text>
 
-  <text x="20" y="143" font-family="{SANS}" font-size="11.5" class="mu">Contribution: <tspan class="tx" font-weight="700">0</tspan> &nbsp;•&nbsp; Location: <tspan class="tx" font-weight="600">Pune, India</tspan></text>
+  <text x="20" y="143" font-family="{SANS}" font-size="11.5" class="mu">Contribution: <tspan class="tx" font-weight="700">0</tspan>  •  Location: <tspan class="tx" font-weight="600">Pune, India</tspan></text>
 </svg>"""
     write(ASSETS / "profiles" / "codeforces.svg", svg)
 
@@ -444,6 +520,7 @@ def main() -> None:
     for sub in ("banners", "headings", "profiles", "highlights", "about", "status", "achievements"):
         shutil.rmtree(ASSETS / sub, ignore_errors=True)
     hero()
+    terminal()
     ending()
     for f, t, a in HEADINGS:
         heading(f, t, a)

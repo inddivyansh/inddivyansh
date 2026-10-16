@@ -25,12 +25,9 @@
 <!-- ================================ ABOUT ================================= -->
 <p align="center" id="about"><img src="assets/headings/about.svg" height="34" alt="About Me"/></p>
 
-I'm a final-year Computer Science undergraduate at **IIIT Pune** specializing in **Artificial Intelligence, Machine Learning, and Backend Engineering**. I like turning complex algorithms and modern AI architectures into reliable, scalable products:
-
-- 🔭 **Current Focus:** Generative AI & RAG pipelines, deterministic geometric rule engines, satellite data ML, and high-performance REST APIs
-- ⚡ **Competitive Programming:** **300+ DSA problems solved** in C++ (CodeChef 2★ 1570 peak, Codeforces Pupil 1240)
-- 🚀 **Featured Work:** [CruxGPT v2](https://github.com/inddivyansh/CruxGPT_v2) (document intelligence), [BuildWiseAI v2](https://github.com/inddivyansh/BuildWiseAI_v2) (blueprint studio & code compliance), and [MusicLens](https://github.com/inddivyansh/MusicLens)
-- 🎯 **Status:** Actively seeking **internships and full-time software / AI engineering opportunities**
+<div align="center">
+<img src="assets/about/terminal.svg" width="860" alt="Terminal: Divyansh Nagar, B.Tech CSE at IIIT Pune. AI products, 300+ DSA problems solved, open to internships and full-time opportunities."/>
+</div>
 
 <!-- =============================== EXPERIENCE ============================== -->
 <p align="center" id="experience"><img src="assets/headings/experience.svg" height="34" alt="Experience"/></p>

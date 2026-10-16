@@ -27,7 +27,7 @@
 
   <text x="235" y="64" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="mu">Contests Participated</text>
   <text x="235" y="94" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="32" font-weight="800" class="tx">19</text>
-  <text x="235" y="108" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11" class="mu">Starters 260 &nbsp;•&nbsp; Rank 637</text>
+  <text x="235" y="108" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11" class="mu">Starters 260  •  Rank 637</text>
 
   <!-- Progress to next star -->
   <text x="20" y="127" font-family="'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif" font-size="11.5" class="tx"><tspan font-weight="700" class="cc-green">30 pts</tspan> to 3★ (1600)<tspan class="mu">  /  ~1-2 contests (est.)</tspan></text>
