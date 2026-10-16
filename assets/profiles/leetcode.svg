@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-label="LEETCODE 1573">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2027"/><stop offset="0.55" stop-color="#203a43"/><stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="corner" cx="1" cy="0" r="0.9">
+      <stop offset="0" stop-color="#ffb02e" stop-opacity="0.3"/><stop offset="1" stop-color="#ffb02e" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="round"><rect width="300" height="170" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="300" height="170" fill="url(#bg)"/>
+    <rect width="300" height="170" fill="url(#grid)"/>
+    <rect width="300" height="170" fill="url(#corner)"/>
+    <rect x="-3" y="0" width="2" height="170" fill="#ffb02e" opacity="0.18">
+      <animate attributeName="x" values="-3;300" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="1" y="1" width="298" height="168" rx="14" fill="none" stroke="#ffb02e" stroke-opacity="0.35"/>
+  <circle cx="26" cy="30" r="4" fill="#ffb02e"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="38" y="34" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="12" letter-spacing="1.5" fill="#ffb02e">LEETCODE</text>
+  <text x="22" y="82" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="800" fill="#ffffff">1573</text>
+  <text x="22" y="106" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d6e2ee">Top 28%  ·  inddivyansh</text>
+  <text x="22" y="128" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8ea3b8">Contest rating</text>
+  <rect x="22" y="152" width="256" height="6" rx="3" fill="#ffffff" opacity="0.1"/>
+  <rect x="22" y="152" width="0" height="6" rx="3" fill="#ffb02e">
+    <animate attributeName="width" values="0;184.3;184.3;0" keyTimes="0;0.3;0.9;1" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</svg>

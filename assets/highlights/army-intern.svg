@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="170" viewBox="0 0 300 170" role="img" aria-label="AUG - OCT 2026 Army Intern">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2027"/><stop offset="0.55" stop-color="#203a43"/><stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#ffffff" stroke-opacity="0.05"/>
+    </pattern>
+    <radialGradient id="corner" cx="1" cy="0" r="0.9">
+      <stop offset="0" stop-color="#fb923c" stop-opacity="0.3"/><stop offset="1" stop-color="#fb923c" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="round"><rect width="300" height="170" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="300" height="170" fill="url(#bg)"/>
+    <rect width="300" height="170" fill="url(#grid)"/>
+    <rect width="300" height="170" fill="url(#corner)"/>
+    <rect x="-3" y="0" width="2" height="170" fill="#fb923c" opacity="0.18">
+      <animate attributeName="x" values="-3;300" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <rect x="1" y="1" width="298" height="168" rx="14" fill="none" stroke="#fb923c" stroke-opacity="0.35"/>
+  <circle cx="26" cy="30" r="4" fill="#fb923c"><animate attributeName="opacity" values="1;0.25;1" dur="1.8s" repeatCount="indefinite"/></circle>
+  <text x="38" y="34" font-family="'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace" font-size="12" letter-spacing="1.5" fill="#fb923c">AUG - OCT 2026</text>
+  <text x="22" y="82" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="27" font-weight="800" fill="#ffffff">Army Intern</text>
+  <text x="22" y="106" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d6e2ee">Information Warfare</text>
+  <text x="22" y="128" font-family="'Segoe UI',Inter,'Helvetica Neue',Arial,sans-serif" font-size="12" fill="#8ea3b8">Indian Army Southern Command</text><circle cx="26" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="0.0s" repeatCount="indefinite"/></circle><circle cx="40" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="0.25s" repeatCount="indefinite"/></circle><circle cx="54" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="0.5s" repeatCount="indefinite"/></circle><circle cx="68" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="0.75s" repeatCount="indefinite"/></circle><circle cx="82" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="1.0s" repeatCount="indefinite"/></circle><circle cx="96" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="1.25s" repeatCount="indefinite"/></circle><circle cx="110" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="1.5s" repeatCount="indefinite"/></circle><circle cx="124" cy="155" r="3" fill="#fb923c"><animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" begin="1.75s" repeatCount="indefinite"/></circle>
+</svg>
