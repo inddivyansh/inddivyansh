@@ -7,8 +7,6 @@
 <a href="mailto:divyansh.indian1@gmail.com"><img src="https://img.shields.io/badge/EMAIL-divyansh.indian1-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 <img src="https://komarev.com/ghpvc/?username=inddivyansh&label=PROFILE%20VIEWS&color=0969da&style=flat-square" alt="Profile views"/>
 
-<img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
-
 <sub>
 <a href="#about">About</a> &nbsp;/&nbsp;
 <a href="#experience">Experience</a> &nbsp;/&nbsp;
@@ -19,6 +17,8 @@
 <a href="#github-stats">Stats</a> &nbsp;/&nbsp;
 <a href="#contact">Contact</a>
 </sub>
+
+<img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
 
 </div>
 

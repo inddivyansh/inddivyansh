@@ -6,7 +6,7 @@ Generates the SVG assets used by the profile README.
     python tools/generate_snake.py         # contribution snake (needs network)
 
 Output layout:
-  assets/banners/        hero.svg (floating stickers + typewriter), ending.svg
+  assets/banners/        hero.svg (initial card content, transparent visual style), ending.svg
   assets/headings/       pure typewriter heading SVGs (transparent, NO cards)
   assets/about/          terminal.svg (animated developer terminal)
   assets/status/         availability.svg
@@ -17,6 +17,8 @@ Output layout:
 Every file is self-contained SVG with valid XML entities and transparent backgrounds.
 Colours adapt to GitHub light / dark mode through `prefers-color-scheme`.
 """
+import math
+import random
 import shutil
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -54,14 +56,6 @@ HEADINGS = [
     ("github-stats", "GitHub Stats", "green"),
     ("contribution-snake", "Contribution Snake", "orange"),
     ("contact", "Contact", "purple"),
-]
-
-HERO_ROLES = [
-    "B.Tech CSE @ IIIT Pune '27",
-    "AI / ML Engineer: RAG & Generative AI",
-    "Backend Developer: FastAPI & PostgreSQL",
-    "Competitive Programmer in C++",
-    "Open to Internships & Full-Time Roles",
 ]
 
 QUOTES = [
@@ -153,103 +147,144 @@ def heading(fname: str, title: str, accent: str) -> None:
 
 
 # ----------------------------------------------------------------------------
-# hero: transparent floating stickers / PNG-style composition + typewriter
+# hero: initial card content (Data Science, ML visualizations, rotating roles),
+#       refactored into a sleek transparent visual style (no rectangular card box)
 # ----------------------------------------------------------------------------
 def hero() -> None:
-    W, H = 900, 155
-    slot = 5.2
-    T = slot * len(HERO_ROLES)
-    name = "Divyansh Nagar"
-    fs_name = 44
+    W, H = 1200, 310
+    r = random.Random(7)
 
-    parts = []
-    for i, role in enumerate(HERO_ROLES):
-        display_role = f"❯ {role}"
-        n, fs = len(display_role), 18
-        xs = (W - n * fs * 0.6) / 2
-        t0 = i * slot + 0.3
-        ev = type_events(t0, n, 0.04)
-        hold_end = ev[-1][0] + 2.0
-        ev += [(hold_end + j * 0.018, n - 1 - j) for j in range(n)]
-        parts.append(typed(f"hr{i}", display_role, xs, 118, fs, "f-cyan", T, ev, weight=600))
+    # subtle matrix code rain (transparent background)
+    matrix = []
+    for i in range(16):
+        x = 30 + i * 75
+        rows = "".join(
+            f'<tspan x="{x}" dy="16">{r.choice("01")}{r.choice("01")}{r.choice("0123456789")}</tspan>'
+            for _ in range(22)
+        )
+        matrix.append(
+            f'<text x="{x}" y="-100" font-family="{MONO}" font-size="12" class="mat">{rows}'
+            f'<animateTransform attributeName="transform" type="translate" values="0 0;0 48" dur="{r.randint(9, 18)}s" repeatCount="indefinite"/></text>'
+        )
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Divyansh Nagar - AI, Backend &amp; Competitive Programming">
+    # right: scatter plot + regression
+    px0, px1, py0, py1 = 700, 1020, 52, 245
+    grid = "".join(
+        f'<line x1="{px0}" y1="{y}" x2="{px1}" y2="{y}" class="gl"/>'
+        for y in range(py0 + 38, py1, 38)
+    ) + "".join(
+        f'<line x1="{x}" y1="{py0}" x2="{x}" y2="{py1}" class="gl"/>'
+        for x in range(px0 + 38, px1, 38)
+    )
+    sx0, sy0 = px0 + 20, py1 - 20
+    sx1, sy1 = px1 - 20, py0 + 36
+    dots = []
+    for _ in range(46):
+        t = r.random()
+        x = sx0 + t * (sx1 - sx0)
+        y = sy0 - t * (sy0 - sy1) + r.gauss(0, 13)
+        y = min(py1 - 6, max(py0 + 16, y))
+        cls = "dot-c" if abs(y - (sy0 - t * (sy0 - sy1))) < 13 else "dot-p"
+        dots.append(
+            f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" class="{cls}">'
+            f'<animate attributeName="r" values="2.5;4.5;2.5" dur="{r.uniform(2.4, 4):.1f}s" begin="{r.uniform(0, 3):.1f}s" repeatCount="indefinite"/></circle>'
+        )
+
+    # right: histogram
+    hx, hb = 1055, 245
+    bars = []
+    for i in range(10):
+        h = round(96 * math.exp(-(((i - 4.5) / 2.6) ** 2)) + 8)
+        x = hx + i * 12
+        bars.append(
+            f'<rect x="{x}" y="{hb}" width="9" height="0" rx="1.5" class="bar">'
+            f'<animate attributeName="height" values="0;{h};{h};0" keyTimes="0;0.35;0.9;1" dur="8s" begin="{i * 0.12:.2f}s" repeatCount="indefinite"/>'
+            f'<animate attributeName="y" values="{hb};{hb - h};{hb - h};{hb}" keyTimes="0;0.35;0.9;1" dur="8s" begin="{i * 0.12:.2f}s" repeatCount="indefinite"/></rect>'
+        )
+
+    # left: rotating roles from initial card
+    roles = [
+        "Final Year CSE @ IIIT Pune",
+        "Building RAG &amp; AI Security systems",
+        "ML on Satellite Time-Series Data",
+        "Backend Engineering with FastAPI",
+        "300+ DSA problems solved",
+    ]
+    n = len(roles)
+    role_svg = []
+    for k, text in enumerate(roles):
+        s, e = k / n, (k + 1) / n
+        kts = f"0;{s:.4f};{s + 0.015:.4f};{e - 0.015:.4f};{e:.4f};1"
+        role_svg.append(
+            f'<text x="86" y="202" font-family="{MONO}" font-size="22" class="role" opacity="0">{text}'
+            f'<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="{kts}" dur="{n * 3}s" repeatCount="indefinite"/></text>'
+        )
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Divyansh Nagar: AI, Data Science, Backend, Full-Stack, Competitive Programming">
   <defs>
-    <linearGradient id="name-grad" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="nm" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
-    <filter id="sticker-glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
-    </filter>
   </defs>
   <style>
     {THEME_CSS}
-    .sticker {{ transition: transform 0.3s ease; }}
+    .prompt {{ fill: #64748b; font-family: {MONO}; font-size: 14.5px; }}
+    .name {{ font-family: {SANS}; font-size: 64px; font-weight: 800; }}
+    .role {{ font-family: {MONO}; font-size: 22px; fill: #38bdf8; }}
+    .prompt-arrow {{ font-family: {MONO}; font-size: 22px; fill: #3fb950; }}
+    .tagline {{ font-family: {MONO}; font-size: 13.5px; fill: #94a3b8; }}
+    .mat {{ fill: #38bdf8; opacity: 0.07; }}
+    .gl {{ stroke: #64748b; stroke-opacity: 0.2; stroke-width: 1; }}
+    .axis {{ stroke: #64748b; stroke-opacity: 0.45; stroke-width: 1.2; fill: none; }}
+    .dot-c {{ fill: #38bdf8; opacity: 0.85; }}
+    .dot-p {{ fill: #c084fc; opacity: 0.85; }}
+    .reg {{ stroke: #fb923c; stroke-width: 2.2; stroke-linecap: round; fill: none; }}
+    .bar {{ fill: #34d399; opacity: 0.85; }}
+    .lbl {{ fill: #64748b; font-family: {MONO}; font-size: 11.5px; }}
+    .pulse-bar {{ fill: #38bdf8; }}
+    @media (prefers-color-scheme: light) {{
+      .prompt {{ fill: #64748b; }}
+      .role {{ fill: #0284c7; }}
+      .prompt-arrow {{ fill: #16a34a; }}
+      .tagline {{ fill: #475569; }}
+      .mat {{ fill: #0284c7; opacity: 0.05; }}
+      .gl {{ stroke: #94a3b8; stroke-opacity: 0.25; }}
+      .axis {{ stroke: #64748b; stroke-opacity: 0.5; }}
+      .dot-c {{ fill: #0284c7; }}
+      .dot-p {{ fill: #9333ea; }}
+      .reg {{ stroke: #ea580c; }}
+      .bar {{ fill: #059669; }}
+      .lbl {{ fill: #475569; }}
+      .pulse-bar {{ fill: #0284c7; }}
+    }}
   </style>
 
-  <!-- Left Floating Stickers (PNG-style transparent icons) -->
-  <!-- Python Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,0" dur="4.2s" repeatCount="indefinite"/>
-    <rect x="36" y="22" width="46" height="46" rx="12" fill="#1e293b" fill-opacity="0.75" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
-    <path d="M59 31c-5.5 0-5.2 2.4-5.2 2.4l.01 2.5h5.3v.7H51.7s-3.5-.4-3.5 5.2 3.1 5.1 3.1 5.1h1.8v-2.6s-.1-3.1 3.1-3.1h5.3s3 0 3-3V34s.4-3-5-3zm-1.5 1.6c.5 0 .9.4.9.9s-.4.9-.9.9-.9-.4-.9-.9.4-.9.9-.9z" fill="#38bdf8"/>
-    <path d="M59 58c5.5 0 5.2-2.4 5.2-2.4l-.01-2.5h-5.3v-.7h7.4s3.5.4 3.5-5.2-3.1-5.1-3.1-5.1h-1.8v2.6s.1 3.1-3.1 3.1h-5.3s-3 0-3 3V55s-.4 3 5 3zm1.5-1.6c-.5 0-.9-.4-.9-.9s.4-.9.9-.9.9.4.9.9-.4.9-.9.9z" fill="#facc15"/>
-  </g>
+  {''.join(matrix)}
 
-  <!-- AI / Neural Brain Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,5; 0,0" dur="5s" repeatCount="indefinite"/>
-    <rect x="94" y="80" width="44" height="44" rx="12" fill="#1e1b4b" fill-opacity="0.75" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.6"/>
-    <circle cx="116" cy="98" r="5" fill="#c084fc"/>
-    <circle cx="106" cy="110" r="4" fill="#818cf8"/>
-    <circle cx="126" cy="110" r="4" fill="#38bdf8"/>
-    <line x1="116" y1="98" x2="106" y2="110" stroke="#c084fc" stroke-width="1.5"/>
-    <line x1="116" y1="98" x2="126" y2="110" stroke="#c084fc" stroke-width="1.5"/>
-    <line x1="106" y1="110" x2="126" y2="110" stroke="#818cf8" stroke-width="1.5"/>
-  </g>
+  <!-- Left: Developer Identity -->
+  <text x="50" y="68" class="prompt">&gt;&gt;&gt; import numpy as np, pandas as pd, sklearn</text>
+  <text x="48" y="148" class="name" fill="url(#nm)">Divyansh Nagar</text>
+  <text x="50" y="202" class="prompt-arrow">&gt;</text>
+  {''.join(role_svg)}
+  <text x="50" y="248" class="tagline">AI  ·  Data Science  ·  Backend  ·  Full-Stack  ·  Competitive Programming</text>
+  <rect x="50" y="266" width="160" height="3" rx="1.5" class="pulse-bar">
+    <animate attributeName="width" values="40;240;40" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
-  <!-- C++ Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="4.6s" repeatCount="indefinite"/>
-    <rect x="22" y="88" width="48" height="38" rx="10" fill="#0f172a" fill-opacity="0.75" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.6"/>
-    <text x="46" y="113" text-anchor="middle" font-family="{MONO}" font-size="14" font-weight="800" fill="#38bdf8">C++</text>
-  </g>
+  <!-- Right: ML Scatter Plot + Regression Line -->
+  <text x="{px0}" y="{py0 - 12}" class="lbl">model.fit(X, y)  →  ŷ = βx + ε</text>
+  {grid}
+  <path d="M{px0} {py0}V{py1}H{px1}" class="axis"/>
+  {''.join(dots)}
+  <path d="M{sx0} {sy0}L{sx1} {sy1}" class="reg" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0;0;100" keyTimes="0;0.4;0.9;1" dur="8s" repeatCount="indefinite"/>
+  </path>
 
-  <!-- Right Floating Stickers (PNG-style transparent icons) -->
-  <!-- Rocket / FastAPI Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-5; 0,0" dur="4.8s" repeatCount="indefinite"/>
-    <rect x="818" y="24" width="46" height="46" rx="12" fill="#064e3b" fill-opacity="0.7" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.6"/>
-    <path d="M848 37c-3-3-8-4-13-2l-3 3 7 7 3-3c2-5 1-10-2-13l8-8c1-1 3-1 4 0s1 3 0 4l-4 4z" fill="#34d399"/>
-    <path d="M832 45l-3 7 4 4 7-3-8-8z" fill="#6ee7b7"/>
-    <circle cx="839" cy="43" r="1.5" fill="#064e3b"/>
-  </g>
-
-  <!-- PostgreSQL / Database Cylinder Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,6; 0,0" dur="4.4s" repeatCount="indefinite"/>
-    <rect x="762" y="80" width="44" height="44" rx="12" fill="#0c4a6e" fill-opacity="0.75" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
-    <ellipse cx="784" cy="95" rx="11" ry="3.5" fill="#38bdf8"/>
-    <path d="M773 95v7c0 2 5 3.5 11 3.5s11-1.5 11-3.5v-7" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
-    <path d="M773 103v7c0 2 5 3.5 11 3.5s11-1.5 11-3.5v-7" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
-  </g>
-
-  <!-- IIIT Pune Emblem Sticker -->
-  <g class="sticker" filter="url(#sticker-glow)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="5.2s" repeatCount="indefinite"/>
-    <rect x="828" y="88" width="50" height="38" rx="10" fill="#451a03" fill-opacity="0.75" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.6"/>
-    <text x="853" y="112" text-anchor="middle" font-family="{MONO}" font-size="12" font-weight="800" fill="#fbbf24">IIITP</text>
-  </g>
-
-  <!-- Center Hero Typography (Transparent, no card) -->
-  <text x="{W / 2}" y="32" text-anchor="middle" font-family="{MONO}" font-size="13" font-weight="600" class="f-blue" letter-spacing="2">&lt;DEVELOPER / PORTFOLIO&gt;</text>
-  <text x="{W / 2}" y="76" text-anchor="middle" font-family="{SANS}" font-size="{fs_name}" font-weight="900" fill="url(#name-grad)">{name}</text>
-  <text x="{W / 2}" y="98" text-anchor="middle" font-family="{SANS}" font-size="13" font-weight="600" class="mu" letter-spacing="1.2">IIIT PUNE '27  •  AI &amp; ML  •  BACKEND  •  COMPETITIVE PROGRAMMING</text>
-
-  <!-- Animated Typewriter Role -->
-  {''.join(parts)}
+  <!-- Right: Histogram -->
+  <text x="{hx}" y="{hb - 120}" class="lbl">hist(residuals)</text>
+  <line x1="{hx - 6}" y1="{hb + 1}" x2="{hx + 124}" y2="{hb + 1}" class="axis"/>
+  {''.join(bars)}
 </svg>"""
     write(ASSETS / "banners" / "hero.svg", svg)
 
