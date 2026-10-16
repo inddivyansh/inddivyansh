@@ -56,6 +56,28 @@
 
 **B.Tech in Computer Science and Engineering** &nbsp;·&nbsp; IIIT Pune &nbsp;·&nbsp; *2023 – 2027*
 
+<!-- ============================ CODING PROFILES ============================ -->
+
+<br/>
+
+<p align="center" id="coding-profiles"><img src="assets/headings/coding-profiles.svg" height="34" alt="Coding Profiles"/></p>
+
+
+<div align="center">
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+<tr valign="middle">
+<td width="50%" align="center" valign="middle">
+  <a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="100%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
+  <br/><br/>
+  <a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="100%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
+</td>
+<td width="50%" align="center" valign="middle">
+  <a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="100%" alt="LeetCode stats and submission heatmap for inddivyansh"/></a>
+</td>
+</tr>
+</table>
+</div>
+
 <!-- ========================== FEATURED PROJECTS =========================== -->
 
 <br/>
@@ -168,6 +190,34 @@
 <a href="https://github.com/inddivyansh?tab=repositories"><img src="https://img.shields.io/badge/More%20projects-Explore%20all%20repositories-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="All repositories"/></a>
 </p>
 
+<!-- ============================== ACHIEVEMENTS ============================= -->
+
+<br/>
+
+<p align="center" id="achievements"><img src="assets/headings/achievements.svg" height="34" alt="Achievements"/></p>
+
+<br/>
+
+<div align="center">
+<img src="assets/achievements/achievements.svg" width="100%" alt="AIR 43 Naukri EROH 2025 · Top 10% ISRO BAH 2025 · Harvard CS50x · CodeChef Starters 225 rank 1621 · JEE Main 97.81 percentile · 300+ DSA problems"/>
+</div>
+
+<br/>
+
+<details>
+<summary><b>Certifications</b></summary>
+<br/>
+
+| Certification | Issuer |
+|:---|:---|
+| CS50x — Introduction to Computer Science | Harvard University |
+| AWS Cloud Essentials | Amazon Web Services |
+| Google Cloud Essentials | Google |
+| Google Cloud Arcade 2025 | Google |
+| Introduction to Cybersecurity | Cisco |
+
+</details>
+
 <!-- =============================== TECH STACK ============================== -->
 
 <br/>
@@ -236,55 +286,6 @@
 
 </div>
 
-<!-- ============================== ACHIEVEMENTS ============================= -->
-
-<br/>
-
-<p align="center" id="achievements"><img src="assets/headings/achievements.svg" height="34" alt="Achievements"/></p>
-
-<br/>
-
-<div align="center">
-<img src="assets/achievements/achievements.svg" width="100%" alt="AIR 43 Naukri EROH 2025 · Top 10% ISRO BAH 2025 · Harvard CS50x · CodeChef Starters 225 rank 1621 · JEE Main 97.81 percentile · 300+ DSA problems"/>
-</div>
-
-<br/>
-
-<details>
-<summary><b>Certifications</b></summary>
-<br/>
-
-| Certification | Issuer |
-|:---|:---|
-| CS50x — Introduction to Computer Science | Harvard University |
-| AWS Cloud Essentials | Amazon Web Services |
-| Google Cloud Essentials | Google |
-| Google Cloud Arcade 2025 | Google |
-| Introduction to Cybersecurity | Cisco |
-
-</details>
-
-<!-- ============================ CODING PROFILES ============================ -->
-
-<br/>
-
-<p align="center" id="coding-profiles"><img src="assets/headings/coding-profiles.svg" height="34" alt="Coding Profiles"/></p>
-
-
-<div align="center">
-<table align="center" border="0" cellpadding="0" cellspacing="0">
-<tr valign="middle">
-<td width="50%" align="center" valign="middle">
-  <a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="100%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
-  <br/><br/>
-  <a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="100%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
-</td>
-<td width="50%" align="center" valign="middle">
-  <a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="100%" alt="LeetCode stats and submission heatmap for inddivyansh"/></a>
-</td>
-</tr>
-</table>
-</div>
 
 <!-- =============================== GITHUB STATS ============================ -->
 
