@@ -2,11 +2,11 @@
   <style>
     .bg { fill: #101010; }
     .border { stroke: #333333; }
-    .rank { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 14px; font-weight: 700; }
-    .username { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 24px; font-weight: 800; }
+    .rank { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 26px; font-weight: 800; }
+    .username { fill: #c9d1d9; font-family: 'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace; font-size: 13.5px; font-weight: 600; }
     .lbl { fill: #8b949e; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; }
-    .val { fill: #e6edf3; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
-    .hi { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .val { fill: #e6edf3; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 18px; font-weight: 800; }
+    .hi { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 20px; font-weight: 800; }
     .max-lbl { fill: #6e7681; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 12px; }
     .plt { fill: #8b949e; font-family: 'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
     .dv { stroke: #262626; }
@@ -17,11 +17,9 @@
   <rect x="29" y="16" width="4" height="15" rx="1" fill="#3065c0"/>
   <rect x="36" y="18" width="4" height="13" rx="1" fill="#C0392B"/>
   <text x="48" y="29" class="plt">CODEFORCES</text>
-  <text x="22" y="58" class="rank">Pupil</text>
-  <text x="22" y="86" class="username">divyansh.indian1</text>
-  <line x1="22" y1="102" x2="478" y2="102" class="dv" stroke-width="1"/>
-  <text x="22" y="125" class="lbl">Contest rating: </text>
-  <text x="116" y="125" class="hi">1240</text>
-  <text x="152" y="125" class="max-lbl"> (max. pupil, 1240)</text>
-  <text x="478" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">9</tspan></text>
+  <text x="22" y="60" class="rank">Pupil</text>
+  <text x="22" y="82" class="username">divyansh.indian1</text>
+  <line x1="22" y1="98" x2="478" y2="98" class="dv" stroke-width="1"/>
+  <text x="22" y="127" class="lbl">Contest rating: <tspan class="hi">1240</tspan> <tspan class="max-lbl">(max. pupil, 1240)</tspan></text>
+  <text x="478" y="127" text-anchor="end" class="lbl">Contests: <tspan class="val">9</tspan></text>
 </svg>

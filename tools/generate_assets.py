@@ -430,11 +430,11 @@ def codechef() -> None:
   <style>
     .bg {{ fill: #101010; }}
     .border {{ stroke: #333333; }}
-    .rank {{ fill: #ffa116; font-family: {SANS}; font-size: 14px; font-weight: 700; }}
-    .username {{ fill: #ffa116; font-family: {SANS}; font-size: 24px; font-weight: 800; }}
+    .rank {{ fill: #ffa116; font-family: {SANS}; font-size: 26px; font-weight: 800; }}
+    .username {{ fill: #c9d1d9; font-family: {MONO}; font-size: 13.5px; font-weight: 600; }}
     .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
-    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
-    .hi {{ fill: #ffa116; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 18px; font-weight: 800; }}
+    .hi {{ fill: #ffa116; font-family: {SANS}; font-size: 20px; font-weight: 800; }}
     .max-lbl {{ fill: #6e7681; font-family: {SANS}; font-size: 12px; }}
     .plt {{ fill: #8b949e; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
     .dv {{ stroke: #262626; }}
@@ -445,13 +445,11 @@ def codechef() -> None:
   <rect x="29" y="16" width="4" height="15" rx="1" fill="#ffa116" opacity="0.8"/>
   <rect x="36" y="21" width="4" height="10" rx="1" fill="#ffa116" opacity="0.6"/>
   <text x="48" y="29" class="plt">CODECHEF</text>
-  <text x="22" y="58" class="rank">{stars}</text>
-  <text x="22" y="86" class="username">{escape(c['user'])}</text>
-  <line x1="22" y1="102" x2="{W-22}" y2="102" class="dv" stroke-width="1"/>
-  <text x="22" y="125" class="lbl">Contest rating: </text>
-  <text x="116" y="125" class="hi">{c['rating']}</text>
-  <text x="152" y="125" class="max-lbl"> (max. {stars}, {c['rating']})</text>
-  <text x="{W-22}" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
+  <text x="22" y="60" class="rank">{stars}</text>
+  <text x="22" y="82" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="98" x2="{W-22}" y2="98" class="dv" stroke-width="1"/>
+  <text x="22" y="127" class="lbl">Contest rating: <tspan class="hi">{c['rating']}</tspan> <tspan class="max-lbl">(max. {stars}, {c['rating']})</tspan></text>
+  <text x="{W-22}" y="127" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
 </svg>"""
     write(ASSETS / "profiles" / "codechef.svg", svg)
 
@@ -467,11 +465,11 @@ def codeforces() -> None:
   <style>
     .bg {{ fill: #101010; }}
     .border {{ stroke: #333333; }}
-    .rank {{ fill: #77bb41; font-family: {SANS}; font-size: 14px; font-weight: 700; }}
-    .username {{ fill: #77bb41; font-family: {SANS}; font-size: 24px; font-weight: 800; }}
+    .rank {{ fill: #77bb41; font-family: {SANS}; font-size: 26px; font-weight: 800; }}
+    .username {{ fill: #c9d1d9; font-family: {MONO}; font-size: 13.5px; font-weight: 600; }}
     .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
-    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
-    .hi {{ fill: #77bb41; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 18px; font-weight: 800; }}
+    .hi {{ fill: #77bb41; font-family: {SANS}; font-size: 20px; font-weight: 800; }}
     .max-lbl {{ fill: #6e7681; font-family: {SANS}; font-size: 12px; }}
     .plt {{ fill: #8b949e; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
     .dv {{ stroke: #262626; }}
@@ -482,13 +480,11 @@ def codeforces() -> None:
   <rect x="29" y="16" width="4" height="15" rx="1" fill="#3065c0"/>
   <rect x="36" y="18" width="4" height="13" rx="1" fill="#C0392B"/>
   <text x="48" y="29" class="plt">CODEFORCES</text>
-  <text x="22" y="58" class="rank">{escape(c['rank'])}</text>
-  <text x="22" y="86" class="username">{escape(c['user'])}</text>
-  <line x1="22" y1="102" x2="{W-22}" y2="102" class="dv" stroke-width="1"/>
-  <text x="22" y="125" class="lbl">Contest rating: </text>
-  <text x="116" y="125" class="hi">{c['rating']}</text>
-  <text x="152" y="125" class="max-lbl"> (max. {escape(c['rank'].lower())}, {c['max_rating']})</text>
-  <text x="{W-22}" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
+  <text x="22" y="60" class="rank">{escape(c['rank'])}</text>
+  <text x="22" y="82" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="98" x2="{W-22}" y2="98" class="dv" stroke-width="1"/>
+  <text x="22" y="127" class="lbl">Contest rating: <tspan class="hi">{c['rating']}</tspan> <tspan class="max-lbl">(max. {escape(c['rank'].lower())}, {c['max_rating']})</tspan></text>
+  <text x="{W-22}" y="127" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
 </svg>"""
     write(ASSETS / "profiles" / "codeforces.svg", svg)
 

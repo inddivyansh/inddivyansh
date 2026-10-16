@@ -10,7 +10,7 @@
 &nbsp;
 <img src="https://komarev.com/ghpvc/?username=inddivyansh&label=PROFILE%20VIEWS&color=0969da&style=flat-square" alt="Profile views"/>
 
-<br/><br/>
+<br/>
 
 <img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
 
@@ -35,8 +35,6 @@
 
 <p align="center" id="about"><img src="assets/headings/about.svg" height="34" alt="About Me"/></p>
 
-<br/>
-
 <div align="center">
 <img src="assets/about/terminal.svg" width="860" alt="Terminal: whoami → Divyansh Nagar, B.Tech CSE IIIT Pune; cat about.txt → AI products, 300+ DSA problems; echo $STATUS → open to internships and full-time"/>
 </div>
@@ -47,7 +45,6 @@
 
 <p align="center" id="experience"><img src="assets/headings/experience.svg" height="34" alt="Experience"/></p>
 
-<br/>
 
 **Information Warfare Intern** &nbsp;·&nbsp; Indian Army Southern Command &nbsp;·&nbsp; *Aug 2026 – Oct 2026*
 
@@ -65,7 +62,6 @@
 
 <p align="center" id="featured-projects"><img src="assets/headings/projects.svg" height="34" alt="Featured Projects"/></p>
 
-<br/>
 
 <table width="100%" cellpadding="12">
 <tr>
@@ -274,7 +270,6 @@
 
 <p align="center" id="coding-profiles"><img src="assets/headings/coding-profiles.svg" height="34" alt="Coding Profiles"/></p>
 
-<br/>
 
 <div align="center">
 <table align="center" border="0" cellpadding="0" cellspacing="0">
@@ -297,7 +292,6 @@
 
 <p align="center" id="github-stats"><img src="assets/headings/github-stats.svg" height="34" alt="GitHub Stats"/></p>
 
-<br/>
 
 <div align="center">
 <table align="center" border="0" cellpadding="6">
@@ -321,7 +315,6 @@
 
 <p align="center" id="contribution-snake"><img src="assets/headings/contribution-snake.svg" height="34" alt="Contribution Snake"/></p>
 
-<br/>
 
 <p align="center">
 <img src="assets/snake/snake.svg" width="100%" alt="Snake eating the last 6 months of GitHub contributions"/>
@@ -333,7 +326,6 @@
 
 <p align="center" id="contact"><img src="assets/headings/contact.svg" height="34" alt="Contact"/></p>
 
-<br/>
 
 <div align="center">
 
