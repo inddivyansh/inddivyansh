@@ -10,8 +10,6 @@
 &nbsp;
 <img src="https://komarev.com/ghpvc/?username=inddivyansh&label=PROFILE%20VIEWS&color=0969da&style=flat-square" alt="Profile views"/>
 
-<br/>
-
 <img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
 
 <br/>
