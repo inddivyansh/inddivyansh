@@ -1,56 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="130" viewBox="0 0 880 130" role="img" aria-label="Codeforces divyansh.indian1: Pupil, rating 1240">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="150" viewBox="0 0 500 150" role="img" aria-label="Codeforces divyansh.indian1: Pupil, rating 1240">
   <style>
-    .bg { fill: #0d1117; }
-    .border { stroke: #30363d; }
-    .rank { fill: #77bb41; font-family: 'Segoe UI',Arial,sans-serif; font-size: 15px; font-weight: 700; }
-    .username { fill: #77bb41; font-family: 'Segoe UI',Arial,sans-serif; font-size: 28px; font-weight: 800; }
-    .label { fill: #8b949e; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; }
-    .value { fill: #e6edf3; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; font-weight: 600; }
-    .highlight { fill: #77bb41; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; font-weight: 700; }
-    .platform { fill: #6e7681; font-family: 'Fira Code',monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
-    .div { stroke: #21262d; }
-    <!-- 3-bar logo colors fixed -->
-    @media (prefers-color-scheme: light) {
-      .bg { fill: #ffffff; }
-      .border { stroke: #d0d7de; }
-      .label { fill: #57606a; }
-      .value { fill: #1f2328; }
-      .platform { fill: #8c959f; }
-      .div { stroke: #d0d7de; }
-    }
+    .bg { fill: #101010; }
+    .border { stroke: #333333; }
+    .rank { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 14px; font-weight: 700; }
+    .username { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 24px; font-weight: 800; }
+    .lbl { fill: #8b949e; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; }
+    .val { fill: #e6edf3; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .hi { fill: #77bb41; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .max-lbl { fill: #6e7681; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 12px; }
+    .plt { fill: #8b949e; font-family: 'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    .dv { stroke: #262626; }
   </style>
-
-  <!-- Card -->
-  <rect x="0.5" y="0.5" width="879" height="129" rx="6" class="bg"/>
-  <rect x="0.5" y="0.5" width="879" height="129" rx="6" fill="none" stroke-width="1" class="border"/>
-
-  <!-- Native 3-bar Codeforces logo -->
-  <rect x="22" y="20" width="5" height="10" rx="1" fill="#F3B431"/>
-  <rect x="30" y="15" width="5" height="15" rx="1" fill="#3065c0"/>
-  <rect x="38" y="17" width="5" height="13" rx="1" fill="#C0392B"/>
-
-  <!-- Platform name -->
-  <text x="52" y="29" class="platform">CODEFORCES</text>
-
-  <!-- Vertical divider -->
-  <line x1="879" y1="0" x2="879" y2="130" class="div" stroke-width="0"/>
-
-  <!-- Rank -->
+  <rect x="0.5" y="0.5" width="499" height="149" rx="8" class="bg"/>
+  <rect x="0.5" y="0.5" width="499" height="149" rx="8" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="21" width="4" height="10" rx="1" fill="#F3B431"/>
+  <rect x="29" y="16" width="4" height="15" rx="1" fill="#3065c0"/>
+  <rect x="36" y="18" width="4" height="13" rx="1" fill="#C0392B"/>
+  <text x="48" y="29" class="plt">CODEFORCES</text>
   <text x="22" y="58" class="rank">Pupil</text>
-
-  <!-- Username -->
-  <text x="22" y="92" class="username">divyansh.indian1</text>
-
-  <!-- Divider -->
-  <line x1="22" y1="102" x2="858" y2="102" class="div" stroke-width="1"/>
-
-  <!-- Contest rating row -->
-  <text x="22" y="120" class="label">Contest rating: </text>
-  <text x="116" y="120" class="highlight">1240</text>
-  <text x="152" y="120" class="label"> (max. </text>
-  <text x="186" y="120" class="label">pupil, 1240)</text>
-
-  <!-- Contests -->
-  <text x="500" y="120" class="label">Contests: </text>
-  <text x="554" y="120" class="value">9</text>
+  <text x="22" y="86" class="username">divyansh.indian1</text>
+  <line x1="22" y1="102" x2="478" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="125" class="lbl">Contest rating: </text>
+  <text x="116" y="125" class="hi">1240</text>
+  <text x="152" y="125" class="max-lbl"> (max. pupil, 1240)</text>
+  <text x="478" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">9</tspan></text>
 </svg>

@@ -419,86 +419,76 @@ def achievements() -> None:
 
 
 # ----------------------------------------------------------------------------
-# CodeChef: Native profile-style card (black, rank, username, rating, contests)
+# CodeChef: Profile card matching LeetCode dark theme (500x150)
 # ----------------------------------------------------------------------------
 def codechef() -> None:
     c = CODECHEF
-    W, H = 880, 130
+    W, H = 500, 150
     stars = f"{c['stars']}\u2605"
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="CodeChef {c['user']}: rating {c['rating']}, {stars}">
   <style>
-    .bg {{ fill: #0d1117; }}
-    .border {{ stroke: #30363d; }}
-    .rank {{ fill: #e68000; font-family: {SANS}; font-size: 15px; font-weight: 700; }}
-    .username {{ fill: #e68000; font-family: {SANS}; font-size: 28px; font-weight: 800; }}
+    .bg {{ fill: #101010; }}
+    .border {{ stroke: #333333; }}
+    .rank {{ fill: #ffa116; font-family: {SANS}; font-size: 14px; font-weight: 700; }}
+    .username {{ fill: #ffa116; font-family: {SANS}; font-size: 24px; font-weight: 800; }}
     .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
-    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 600; }}
-    .hi {{ fill: #e68000; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
-    .plt {{ fill: #6e7681; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
-    .dv {{ stroke: #21262d; }}
-    @media (prefers-color-scheme: light) {{
-      .bg {{ fill: #ffffff; }} .border {{ stroke: #d0d7de; }}
-      .rank {{ fill: #c25400; }} .username {{ fill: #c25400; }} .hi {{ fill: #c25400; }}
-      .lbl {{ fill: #57606a; }} .val {{ fill: #1f2328; }} .plt {{ fill: #8c959f; }} .dv {{ stroke: #d0d7de; }}
-    }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .hi {{ fill: #ffa116; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
+    .max-lbl {{ fill: #6e7681; font-family: {SANS}; font-size: 12px; }}
+    .plt {{ fill: #8b949e; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
+    .dv {{ stroke: #262626; }}
   </style>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" class="bg"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" stroke-width="1" class="border"/>
-  <rect x="22" y="17" width="5" height="13" rx="1" fill="#e68000"/>
-  <rect x="30" y="14" width="5" height="16" rx="1" fill="#e68000" opacity="0.7"/>
-  <rect x="38" y="19" width="5" height="11" rx="1" fill="#e68000" opacity="0.5"/>
-  <text x="52" y="29" class="plt">CODECHEF</text>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="8" class="bg"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="8" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="19" width="4" height="12" rx="1" fill="#ffa116"/>
+  <rect x="29" y="16" width="4" height="15" rx="1" fill="#ffa116" opacity="0.8"/>
+  <rect x="36" y="21" width="4" height="10" rx="1" fill="#ffa116" opacity="0.6"/>
+  <text x="48" y="29" class="plt">CODECHEF</text>
   <text x="22" y="58" class="rank">{stars}</text>
-  <text x="22" y="92" class="username">{escape(c['user'])}</text>
-  <line x1="22" y1="102" x2="858" y2="102" class="dv" stroke-width="1"/>
-  <text x="22" y="120" class="lbl">Contest rating: </text>
-  <text x="116" y="120" class="hi">{c['rating']}</text>
-  <text x="152" y="120" class="lbl"> (max. {stars}, {c['rating']})</text>
-  <text x="500" y="120" class="lbl">Contests: </text>
-  <text x="554" y="120" class="val">{c['contests']}</text>
+  <text x="22" y="86" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="102" x2="{W-22}" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="125" class="lbl">Contest rating: </text>
+  <text x="116" y="125" class="hi">{c['rating']}</text>
+  <text x="152" y="125" class="max-lbl"> (max. {stars}, {c['rating']})</text>
+  <text x="{W-22}" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
 </svg>"""
     write(ASSETS / "profiles" / "codechef.svg", svg)
 
 
 # ----------------------------------------------------------------------------
-# Codeforces: Native profile-style card (black, rank, username, rating, contests)
+# Codeforces: Profile card matching LeetCode dark theme (500x150)
 # ----------------------------------------------------------------------------
 def codeforces() -> None:
     c = CODEFORCES
-    W, H = 880, 130
+    W, H = 500, 150
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Codeforces {c['user']}: {c['rank']}, rating {c['rating']}">
   <style>
-    .bg {{ fill: #0d1117; }}
-    .border {{ stroke: #30363d; }}
-    .rank {{ fill: #77bb41; font-family: {SANS}; font-size: 15px; font-weight: 700; }}
-    .username {{ fill: #77bb41; font-family: {SANS}; font-size: 28px; font-weight: 800; }}
+    .bg {{ fill: #101010; }}
+    .border {{ stroke: #333333; }}
+    .rank {{ fill: #77bb41; font-family: {SANS}; font-size: 14px; font-weight: 700; }}
+    .username {{ fill: #77bb41; font-family: {SANS}; font-size: 24px; font-weight: 800; }}
     .lbl {{ fill: #8b949e; font-family: {SANS}; font-size: 13px; }}
-    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 600; }}
+    .val {{ fill: #e6edf3; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
     .hi {{ fill: #77bb41; font-family: {SANS}; font-size: 13px; font-weight: 700; }}
-    .plt {{ fill: #6e7681; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
-    .dv {{ stroke: #21262d; }}
-    @media (prefers-color-scheme: light) {{
-      .bg {{ fill: #ffffff; }} .border {{ stroke: #d0d7de; }}
-      .rank {{ fill: #008000; }} .username {{ fill: #008000; }} .hi {{ fill: #008000; }}
-      .lbl {{ fill: #57606a; }} .val {{ fill: #1f2328; }} .plt {{ fill: #8c959f; }} .dv {{ stroke: #d0d7de; }}
-    }}
+    .max-lbl {{ fill: #6e7681; font-family: {SANS}; font-size: 12px; }}
+    .plt {{ fill: #8b949e; font-family: {MONO}; font-size: 11px; font-weight: 700; letter-spacing: 2px; }}
+    .dv {{ stroke: #262626; }}
   </style>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" class="bg"/>
-  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="6" fill="none" stroke-width="1" class="border"/>
-  <rect x="22" y="20" width="5" height="10" rx="1" fill="#F3B431"/>
-  <rect x="30" y="15" width="5" height="15" rx="1" fill="#3065c0"/>
-  <rect x="38" y="17" width="5" height="13" rx="1" fill="#C0392B"/>
-  <text x="52" y="29" class="plt">CODEFORCES</text>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="8" class="bg"/>
+  <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="8" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="21" width="4" height="10" rx="1" fill="#F3B431"/>
+  <rect x="29" y="16" width="4" height="15" rx="1" fill="#3065c0"/>
+  <rect x="36" y="18" width="4" height="13" rx="1" fill="#C0392B"/>
+  <text x="48" y="29" class="plt">CODEFORCES</text>
   <text x="22" y="58" class="rank">{escape(c['rank'])}</text>
-  <text x="22" y="92" class="username">{escape(c['user'])}</text>
-  <line x1="22" y1="102" x2="858" y2="102" class="dv" stroke-width="1"/>
-  <text x="22" y="120" class="lbl">Contest rating: </text>
-  <text x="116" y="120" class="hi">{c['rating']}</text>
-  <text x="152" y="120" class="lbl"> (max. {escape(c['rank'].lower())}, {c['max_rating']})</text>
-  <text x="500" y="120" class="lbl">Contests: </text>
-  <text x="554" y="120" class="val">{c['contests']}</text>
+  <text x="22" y="86" class="username">{escape(c['user'])}</text>
+  <line x1="22" y1="102" x2="{W-22}" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="125" class="lbl">Contest rating: </text>
+  <text x="116" y="125" class="hi">{c['rating']}</text>
+  <text x="152" y="125" class="max-lbl"> (max. {escape(c['rank'].lower())}, {c['max_rating']})</text>
+  <text x="{W-22}" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">{c['contests']}</tspan></text>
 </svg>"""
     write(ASSETS / "profiles" / "codeforces.svg", svg)
 

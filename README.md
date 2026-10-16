@@ -277,15 +277,18 @@
 <br/>
 
 <div align="center">
-
-<a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="48%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
-&nbsp;&nbsp;
-<a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="48%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
-
-<br/><br/>
-
-<a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="480" alt="LeetCode stats and submission heatmap for inddivyansh"/></a>
-
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+<tr valign="middle">
+<td width="50%" align="center" valign="middle">
+  <a href="https://www.codechef.com/users/divyanshindian"><img src="assets/profiles/codechef.svg" width="100%" alt="CodeChef — divyanshindian, rating 1570, 2★"/></a>
+  <br/><br/>
+  <a href="https://codeforces.com/profile/divyansh.indian1"><img src="assets/profiles/codeforces.svg" width="100%" alt="Codeforces — divyansh.indian1, rating 1240, Pupil"/></a>
+</td>
+<td width="50%" align="center" valign="middle">
+  <a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="100%" alt="LeetCode stats and submission heatmap for inddivyansh"/></a>
+</td>
+</tr>
+</table>
 </div>
 
 <!-- =============================== GITHUB STATS ============================ -->

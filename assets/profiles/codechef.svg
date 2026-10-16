@@ -1,55 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="130" viewBox="0 0 880 130" role="img" aria-label="CodeChef divyanshindian: rating 1570, 2 Star">
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="150" viewBox="0 0 500 150" role="img" aria-label="CodeChef divyanshindian: rating 1570, 2★">
   <style>
-    .bg { fill: #0d1117; }
-    .border { stroke: #30363d; }
-    .rank { fill: #e68000; font-family: 'Segoe UI',Arial,sans-serif; font-size: 15px; font-weight: 700; }
-    .username { fill: #e68000; font-family: 'Segoe UI',Arial,sans-serif; font-size: 28px; font-weight: 800; }
-    .label { fill: #8b949e; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; }
-    .value { fill: #e6edf3; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; font-weight: 600; }
-    .highlight { fill: #e68000; font-family: 'Segoe UI',Arial,sans-serif; font-size: 13px; font-weight: 700; }
-    .platform { fill: #6e7681; font-family: 'Fira Code',monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
-    .div { stroke: #21262d; }
-    @media (prefers-color-scheme: light) {
-      .bg { fill: #ffffff; }
-      .border { stroke: #d0d7de; }
-      .rank { fill: #c25400; }
-      .username { fill: #c25400; }
-      .highlight { fill: #c25400; }
-      .label { fill: #57606a; }
-      .value { fill: #1f2328; }
-      .platform { fill: #8c959f; }
-      .div { stroke: #d0d7de; }
-    }
+    .bg { fill: #101010; }
+    .border { stroke: #333333; }
+    .rank { fill: #ffa116; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 14px; font-weight: 700; }
+    .username { fill: #ffa116; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 24px; font-weight: 800; }
+    .lbl { fill: #8b949e; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; }
+    .val { fill: #e6edf3; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .hi { fill: #ffa116; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 13px; font-weight: 700; }
+    .max-lbl { fill: #6e7681; font-family: 'Segoe UI',Inter,-apple-system,'Helvetica Neue',Arial,sans-serif; font-size: 12px; }
+    .plt { fill: #8b949e; font-family: 'Fira Code','JetBrains Mono','SFMono-Regular',Consolas,'Courier New',monospace; font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    .dv { stroke: #262626; }
   </style>
-
-  <!-- Card -->
-  <rect x="0.5" y="0.5" width="879" height="129" rx="6" class="bg"/>
-  <rect x="0.5" y="0.5" width="879" height="129" rx="6" fill="none" stroke-width="1" class="border"/>
-
-  <!-- CodeChef logo: stacked bars (chef hat simplified) -->
-  <rect x="22" y="17" width="5" height="13" rx="1" fill="#e68000"/>
-  <rect x="30" y="14" width="5" height="16" rx="1" fill="#e68000" opacity="0.7"/>
-  <rect x="38" y="19" width="5" height="11" rx="1" fill="#e68000" opacity="0.5"/>
-
-  <!-- Platform name -->
-  <text x="52" y="29" class="platform">CODECHEF</text>
-
-  <!-- Rank: 2★ -->
-  <text x="22" y="58" class="rank">2&#x2605;</text>
-
-  <!-- Username -->
-  <text x="22" y="92" class="username">divyanshindian</text>
-
-  <!-- Divider -->
-  <line x1="22" y1="102" x2="858" y2="102" class="div" stroke-width="1"/>
-
-  <!-- Rating row -->
-  <text x="22" y="120" class="label">Contest rating: </text>
-  <text x="116" y="120" class="highlight">1570</text>
-  <text x="152" y="120" class="label"> (max. </text>
-  <text x="186" y="120" class="label">2&#x2605;, 1570)</text>
-
-  <!-- Contests -->
-  <text x="500" y="120" class="label">Contests: </text>
-  <text x="554" y="120" class="value">19</text>
+  <rect x="0.5" y="0.5" width="499" height="149" rx="8" class="bg"/>
+  <rect x="0.5" y="0.5" width="499" height="149" rx="8" fill="none" stroke-width="1" class="border"/>
+  <rect x="22" y="19" width="4" height="12" rx="1" fill="#ffa116"/>
+  <rect x="29" y="16" width="4" height="15" rx="1" fill="#ffa116" opacity="0.8"/>
+  <rect x="36" y="21" width="4" height="10" rx="1" fill="#ffa116" opacity="0.6"/>
+  <text x="48" y="29" class="plt">CODECHEF</text>
+  <text x="22" y="58" class="rank">2★</text>
+  <text x="22" y="86" class="username">divyanshindian</text>
+  <line x1="22" y1="102" x2="478" y2="102" class="dv" stroke-width="1"/>
+  <text x="22" y="125" class="lbl">Contest rating: </text>
+  <text x="116" y="125" class="hi">1570</text>
+  <text x="152" y="125" class="max-lbl"> (max. 2★, 1570)</text>
+  <text x="478" y="125" text-anchor="end" class="lbl">Contests: <tspan class="val">19</tspan></text>
 </svg>
