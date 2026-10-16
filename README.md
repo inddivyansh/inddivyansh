@@ -46,7 +46,7 @@
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<h3>📚 <a href="https://github.com/inddivyansh/CruxGPT_v2">CruxGPT v2</a> &nbsp;·&nbsp; <a href="https://cruxgpt.vercel.app/">Demo</a></h3>
+<h3><a href="https://github.com/inddivyansh/CruxGPT_v2">CruxGPT v2</a> &nbsp;·&nbsp; <a href="https://cruxgpt.vercel.app/">Demo</a></h3>
 <b>AI document intelligence platform</b>
 <ul>
 <li>Natural-language Q&amp;A over long documents (policies, compliance) with source citation inspection</li>
@@ -57,7 +57,7 @@
 <img src="https://skillicons.dev/icons?i=py,fastapi,react,vite,postgres,supabase&theme=dark" alt="Python, FastAPI, React, Vite, PostgreSQL, Supabase"/>
 </td>
 <td width="50%" valign="top">
-<h3>🏗️ <a href="https://github.com/inddivyansh/BuildWiseAI_v2">BuildWiseAI v2</a></h3>
+<h3><a href="https://github.com/inddivyansh/BuildWiseAI_v2">BuildWiseAI v2</a></h3>
 <b>Generative blueprint studio &amp; code compliance</b>
 <ul>
 <li>Turns written design briefs into vector floor plans, editable in an interactive 2D canvas and real-time 3D viewer</li>
@@ -70,7 +70,7 @@
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3>🛡️ <a href="https://github.com/inddivyansh/NEUROWALL">NeuroWall</a></h3>
+<h3><a href="https://github.com/inddivyansh/NEUROWALL">NeuroWall</a></h3>
 <b>AI-powered web application firewall</b>
 <ul>
 <li>Real-time request inspection with 0.05s average latency</li>
@@ -81,7 +81,7 @@
 <img src="https://skillicons.dev/icons?i=py,fastapi,react,postgres,docker&theme=dark" alt="Python, FastAPI, React, PostgreSQL, Docker"/>
 </td>
 <td width="50%" valign="top">
-<h3>🛰️ <a href="https://github.com/inddivyansh/ISRO-BAH">Aditya-L1 Halo CME Detection</a></h3>
+<h3><a href="https://github.com/inddivyansh/ISRO-BAH">Aditya-L1 Halo CME Detection</a></h3>
 <b>Satellite time-series ML &nbsp;·&nbsp; ISRO BAH 2025</b>
 <ul>
 <li>Detects particle signatures of Halo Coronal Mass Ejections in noisy Aditya-L1 telemetry</li>
@@ -93,7 +93,7 @@
 </tr>
 <tr>
 <td width="50%" valign="top">
-<h3>🎧 <a href="https://github.com/inddivyansh/MusicLens">MusicLens</a></h3>
+<h3><a href="https://github.com/inddivyansh/MusicLens">MusicLens</a></h3>
 <b>Spotify track analytics &amp; recommendation</b>
 <ul>
 <li>Python pipeline cleans 30,000-song catalog, loads PostgreSQL warehouse and exports compact JSON</li>
@@ -103,7 +103,7 @@
 <img src="https://skillicons.dev/icons?i=py,postgres,react,vite,vercel&theme=dark" alt="Python, PostgreSQL, React, Vite, Vercel"/> &nbsp; <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="34" alt="Pandas"/> &nbsp; <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="34" alt="scikit-learn"/>
 </td>
 <td width="50%" valign="top">
-<h3>🧾 <a href="https://github.com/inddivyansh/MarginLeak">MarginLeak</a></h3>
+<h3><a href="https://github.com/inddivyansh/MarginLeak">MarginLeak</a></h3>
 <b>Autonomous accounts-payable auditor</b>
 <ul>
 <li>Spots invoice anomalies for small businesses: price creep, duplicate charges, quantity mismatches, PO discrepancies</li>
@@ -120,22 +120,23 @@
 </p>
 
 <!-- =============================== TECH STACK ============================== -->
-<p align="center" id="tech-stack"><img src="assets/headings/tech-stack.svg" height="34" alt="Tech Stack"/></p>
+<div align="center" id="tech-stack">
+<p align="center"><img src="assets/headings/tech-stack.svg" height="34" alt="Tech Stack"/></p>
 
-<table width="100%">
+<table align="center" width="100%">
 <tr>
-<td width="50%" valign="top">
-<h4>💻 Languages</h4>
+<td width="50%" valign="top" align="center">
+<h4>Languages</h4>
 <img src="https://skillicons.dev/icons?i=cpp,py,java,js,ts&theme=dark" alt="C++, Python, Java, JavaScript, TypeScript"/>
 </td>
-<td width="50%" valign="top">
-<h4>⚡ Frameworks &amp; Backend</h4>
+<td width="50%" valign="top" align="center">
+<h4>Frameworks &amp; Backend</h4>
 <img src="https://skillicons.dev/icons?i=fastapi,flask,react,vite,nextjs&theme=dark" alt="FastAPI, Flask, React, Vite, Next.js"/>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<h4>🧠 Machine Learning &amp; Data</h4>
+<td width="50%" valign="top" align="center">
+<h4>Machine Learning &amp; Data</h4>
 <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" alt="PyTorch, TensorFlow, OpenCV"/>
 <br/>
 <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="26" alt="Pandas"/>
@@ -143,25 +144,24 @@
 <img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="26" alt="SciPy"/>
 <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="26" alt="scikit-learn"/>
 </td>
-<td width="50%" valign="top">
-<h4>🗄️ Databases &amp; Storage</h4>
+<td width="50%" valign="top" align="center">
+<h4>Databases &amp; Storage</h4>
 <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,supabase&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Supabase"/>
 <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="40" alt="Neo4j"/>
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
-<h4>🛠️ DevOps &amp; Tools</h4>
+<td width="50%" valign="top" align="center">
+<h4>DevOps &amp; Tools</h4>
 <img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,postman&theme=dark" alt="Docker, Git, GitHub, GitHub Actions, Linux, Postman"/>
 </td>
-<td width="50%" valign="top">
-<h4>☁️ Cloud &amp; Deployment</h4>
+<td width="50%" valign="top" align="center">
+<h4>Cloud &amp; Deployment</h4>
 <img src="https://skillicons.dev/icons?i=aws,gcp,vercel&theme=dark" alt="AWS, Google Cloud, Vercel"/>
 </td>
 </tr>
 </table>
 
-<div align="center">
 <br/>
 <img src="https://img.shields.io/badge/Generative%20AI-RAG%20%7C%20Gemini%20%7C%20LLM%20APIs%20%7C%20Prompt%20Engineering-8E75B2?style=flat-square" alt="Generative AI"/>
 <img src="https://img.shields.io/badge/Machine%20Learning-XGBoost%20%7C%20Random%20Forest%20%7C%20Gradient%20Boosting-EB5B2F?style=flat-square" alt="Machine Learning"/>
@@ -188,7 +188,7 @@
 
 <br/><br/>
 
-<a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="98%" alt="LeetCode stats and submission heatmap"/></a>
+<a href="https://leetcode.com/u/inddivyansh/"><img src="https://leetcard.jacoblin.cool/inddivyansh?theme=dark&font=Fira%20Code&ext=heatmap" width="480" alt="LeetCode stats and submission heatmap"/></a>
 
 </div>
 
@@ -196,17 +196,24 @@
 <p align="center" id="github-stats"><img src="assets/headings/github-stats.svg" height="34" alt="GitHub Stats"/></p>
 
 <div align="center">
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=inddivyansh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=inddivyansh&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages"/>
-<br/>
-<img src="https://streak-stats.demolab.com?user=inddivyansh&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+<table align="center" border="0">
+<tr>
+<td valign="middle" align="center">
+<img height="155" src="https://github-readme-stats.vercel.app/api?username=inddivyansh&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub stats"/>
+</td>
+<td valign="middle" align="center">
+<img height="155" src="https://streak-stats.demolab.com?user=inddivyansh&theme=tokyonight&hide_border=true" alt="GitHub streak"/>
+</td>
+</tr>
+</table>
 </div>
 
 <!-- ============================ CONTRIBUTION SNAKE ========================== -->
+<p align="center" id="contribution-snake"><img src="assets/headings/contribution-snake.svg" height="34" alt="Contribution Snake"/></p>
 
-<div align="center">
-<img src="assets/snake/snake.svg" width="70%" alt="A snake eating my GitHub contributions from the last four months"/>
-</div>
+<p align="center">
+<img src="assets/snake/snake.svg" width="100%" alt="Contribution Snake"/>
+</p>
 
 <!-- ================================= CONTACT =============================== -->
 <p align="center" id="contact"><img src="assets/headings/contact.svg" height="34" alt="Contact"/></p>

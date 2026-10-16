@@ -21,9 +21,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "snake" / "snake.svg"
 
-WEEKS = 18            # ~ 4 months
+WEEKS = 28            # ~ 6.5 months
 PITCH, SIZE = 30, 26  # cell pitch / cell size (px)
-MOVE_SECONDS = 22     # snake travel time
+MOVE_SECONDS = 28     # snake travel time
 PAUSE_SECONDS = 3     # rest before the loop restarts
 SNAKE_CELLS = 6       # snake length in cells
 

@@ -203,13 +203,13 @@ def hero() -> None:
             f'<animate attributeName="y" values="{hb};{hb - h};{hb - h};{hb}" keyTimes="0;0.35;0.9;1" dur="8s" begin="{i * 0.12:.2f}s" repeatCount="indefinite"/></rect>'
         )
 
-    # left: rotating roles from initial card
+    # left: rotating neutral roles
     roles = [
         "Final Year CSE @ IIIT Pune",
-        "Building RAG &amp; AI Security systems",
-        "ML on Satellite Time-Series Data",
-        "Backend Engineering with FastAPI",
-        "300+ DSA problems solved",
+        "Data Science &amp; Machine Learning",
+        "Data Analytics &amp; Quantitative Analysis",
+        "Problem Solving &amp; Data Structures in C++",
+        "RAG &amp; Generative AI Systems",
     ]
     n = len(roles)
     role_svg = []
