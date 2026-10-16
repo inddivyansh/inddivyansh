@@ -43,69 +43,130 @@
 <!-- ========================== FEATURED PROJECTS =========================== -->
 <p align="center" id="featured-projects"><img src="assets/headings/projects.svg" height="34" alt="Featured Projects"/></p>
 
-### 📚 [CruxGPT v2](https://github.com/inddivyansh/CruxGPT_v2) &nbsp;·&nbsp; [Live demo](https://cruxgpt.vercel.app/)
-**AI document intelligence platform**
-
-- Natural-language Q&A over long documents (policies, compliance) with source citation inspection
-- FastAPI backend with 8 modular API domains: auth, documents, chat, admin
-- RAG pipeline on Google Gemini with candidate scoring, caching and an 8-message context window
-- Multi-tenant user isolation in PostgreSQL with audit trails
-
-<img src="https://skillicons.dev/icons?i=py,fastapi,react,vite,postgres,supabase&theme=dark" height="34" alt="Python, FastAPI, React, Vite, PostgreSQL, Supabase"/>
-
-### 🏗️ [BuildWiseAI v2](https://github.com/inddivyansh/BuildWiseAI_v2)
-**Generative blueprint studio and building-code compliance verification**
-
-- Turns written design briefs into vector floor plans, editable in an interactive 2D canvas and real-time 3D viewer
-- Deterministic compliance engine: pure-Python geometric rules check drawings against code clauses with no LLM guesswork
-- Citations recorded in a Neo4j knowledge graph; one-click handoff from design to audit
-- Exports to IFC, DXF, PDF, SVG and GeoJSON
-
-<img src="https://skillicons.dev/icons?i=py,fastapi,nextjs,threejs&theme=dark" height="34" alt="Python, FastAPI, Next.js, Three.js"/> &nbsp; <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="34" alt="Neo4j"/>
-
-### 🎧 [MusicLens](https://github.com/inddivyansh/MusicLens)
-**Spotify track analytics and recommendation**
-
-- Python pipeline cleans the 30,000-song catalog, loads a PostgreSQL warehouse and exports compact JSON
-- React + Vite dashboard for genre, popularity and audio-feature analytics
-- Explainable content-based recommendations that run directly in the browser; deployed on Vercel
-
-<img src="https://skillicons.dev/icons?i=py,postgres,react,vite,vercel&theme=dark" height="34" alt="Python, PostgreSQL, React, Vite, Vercel"/> &nbsp; <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="34" alt="Pandas"/> &nbsp; <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="34" alt="scikit-learn"/>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<h3>📚 <a href="https://github.com/inddivyansh/CruxGPT_v2">CruxGPT v2</a> &nbsp;·&nbsp; <a href="https://cruxgpt.vercel.app/">Demo</a></h3>
+<b>AI document intelligence platform</b>
+<ul>
+<li>Natural-language Q&amp;A over long documents (policies, compliance) with source citation inspection</li>
+<li>FastAPI backend with 8 modular API domains: auth, documents, chat, admin</li>
+<li>RAG pipeline on Google Gemini with candidate scoring, caching and an 8-message context window</li>
+<li>Multi-tenant user isolation in PostgreSQL with audit trails</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py,fastapi,react,vite,postgres,supabase&theme=dark" alt="Python, FastAPI, React, Vite, PostgreSQL, Supabase"/>
+</td>
+<td width="50%" valign="top">
+<h3>🏗️ <a href="https://github.com/inddivyansh/BuildWiseAI_v2">BuildWiseAI v2</a></h3>
+<b>Generative blueprint studio &amp; code compliance</b>
+<ul>
+<li>Turns written design briefs into vector floor plans, editable in an interactive 2D canvas and real-time 3D viewer</li>
+<li>Deterministic compliance engine: pure-Python geometric rules check drawings against code clauses with no LLM guesswork</li>
+<li>Citations recorded in a Neo4j knowledge graph; one-click handoff from design to audit</li>
+<li>Exports to IFC, DXF, PDF, SVG and GeoJSON</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py,fastapi,nextjs,threejs&theme=dark" alt="Python, FastAPI, Next.js, Three.js"/> &nbsp; <img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="34" alt="Neo4j"/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>🛡️ <a href="https://github.com/inddivyansh/NEUROWALL">NeuroWall</a></h3>
+<b>AI-powered web application firewall</b>
+<ul>
+<li>Real-time request inspection with 0.05s average latency</li>
+<li>Hybrid engine: rules plus Transformers and Autoencoders, 94.5% detection accuracy (vs. 78% baseline)</li>
+<li>Mitigates SQLi, XSS and RCE with a 92% block rate and 2% false positives</li>
+<li>Dockerized microservices with a React monitoring dashboard</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py,fastapi,react,postgres,docker&theme=dark" alt="Python, FastAPI, React, PostgreSQL, Docker"/>
+</td>
+<td width="50%" valign="top">
+<h3>🛰️ <a href="https://github.com/inddivyansh/ISRO-BAH">Aditya-L1 Halo CME Detection</a></h3>
+<b>Satellite time-series ML &nbsp;·&nbsp; ISRO BAH 2025</b>
+<ul>
+<li>Detects particle signatures of Halo Coronal Mass Ejections in noisy Aditya-L1 telemetry</li>
+<li>Rolling variability indicators, dynamic-pressure features, chronological splits and SMOTE</li>
+<li>Tuned XGBoost, Random Forest and Gradient Boosting: ROC-AUC above 0.87 and 24% fewer false positives</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py&theme=dark" alt="Python"/> &nbsp; <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="34" alt="Pandas"/> &nbsp; <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="34" alt="NumPy"/> &nbsp; <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="34" alt="scikit-learn"/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h3>🎧 <a href="https://github.com/inddivyansh/MusicLens">MusicLens</a></h3>
+<b>Spotify track analytics &amp; recommendation</b>
+<ul>
+<li>Python pipeline cleans 30,000-song catalog, loads PostgreSQL warehouse and exports compact JSON</li>
+<li>React + Vite dashboard for genre, popularity and audio-feature analytics</li>
+<li>Explainable content-based recommendations that run directly in the browser; deployed on Vercel</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py,postgres,react,vite,vercel&theme=dark" alt="Python, PostgreSQL, React, Vite, Vercel"/> &nbsp; <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="34" alt="Pandas"/> &nbsp; <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="34" alt="scikit-learn"/>
+</td>
+<td width="50%" valign="top">
+<h3>🧾 <a href="https://github.com/inddivyansh/MarginLeak">MarginLeak</a></h3>
+<b>Autonomous accounts-payable auditor</b>
+<ul>
+<li>Spots invoice anomalies for small businesses: price creep, duplicate charges, quantity mismatches, PO discrepancies</li>
+<li>LLM-assisted analysis behind a FastAPI service with a React front end</li>
+<li>Automated reconciliation and audit trail export</li>
+</ul>
+<img src="https://skillicons.dev/icons?i=py,fastapi,react,postgres&theme=dark" alt="Python, FastAPI, React, PostgreSQL"/>
+</td>
+</tr>
+</table>
 
 <p align="center">
-<a href="https://github.com/inddivyansh?tab=repositories"><img src="https://img.shields.io/badge/All%20repositories-view%20on%20GitHub-2563EB?style=flat-square&logo=github&logoColor=white" alt="All repositories"/></a>
+<a href="https://github.com/inddivyansh?tab=repositories"><img src="https://img.shields.io/badge/More%20projects-Explore%20all%20repositories-2563EB?style=for-the-badge&logo=github&logoColor=white" alt="All repositories"/></a>
 </p>
 
 <!-- =============================== TECH STACK ============================== -->
 <p align="center" id="tech-stack"><img src="assets/headings/tech-stack.svg" height="34" alt="Tech Stack"/></p>
 
-<div align="center">
-
-<sub><b>LANGUAGES</b></sub><br/>
-<img src="https://skillicons.dev/icons?i=cpp,py,java,js,ts&theme=dark" height="38" alt="C++, Python, Java, JavaScript, TypeScript"/>
-
-<br/><br/>
-<sub><b>FRAMEWORKS & BACKEND</b></sub><br/>
-<img src="https://skillicons.dev/icons?i=fastapi,flask,react,vite,nextjs&theme=dark" height="38" alt="FastAPI, Flask, React, Vite, Next.js"/>
-
-<br/><br/>
-<sub><b>MACHINE LEARNING & DATA</b></sub><br/>
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" height="38" alt="PyTorch, TensorFlow, OpenCV"/>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<h4>💻 Languages</h4>
+<img src="https://skillicons.dev/icons?i=cpp,py,java,js,ts&theme=dark" alt="C++, Python, Java, JavaScript, TypeScript"/>
+</td>
+<td width="50%" valign="top">
+<h4>⚡ Frameworks &amp; Backend</h4>
+<img src="https://skillicons.dev/icons?i=fastapi,flask,react,vite,nextjs&theme=dark" alt="FastAPI, Flask, React, Vite, Next.js"/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h4>🧠 Machine Learning &amp; Data</h4>
+<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv&theme=dark" alt="PyTorch, TensorFlow, OpenCV"/>
 <br/>
-<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="28" alt="Pandas"/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="28" alt="NumPy"/>
-<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="28" alt="SciPy"/>
-<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="28" alt="scikit-learn"/>
+<img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" height="26" alt="Pandas"/>
+<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" height="26" alt="NumPy"/>
+<img src="https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white" height="26" alt="SciPy"/>
+<img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" height="26" alt="scikit-learn"/>
+</td>
+<td width="50%" valign="top">
+<h4>🗄️ Databases &amp; Storage</h4>
+<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,supabase&theme=dark" alt="PostgreSQL, MySQL, MongoDB, Supabase"/>
+<img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="40" alt="Neo4j"/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+<h4>🛠️ DevOps &amp; Tools</h4>
+<img src="https://skillicons.dev/icons?i=docker,git,github,githubactions,linux,postman&theme=dark" alt="Docker, Git, GitHub, GitHub Actions, Linux, Postman"/>
+</td>
+<td width="50%" valign="top">
+<h4>☁️ Cloud &amp; Deployment</h4>
+<img src="https://skillicons.dev/icons?i=aws,gcp,vercel&theme=dark" alt="AWS, Google Cloud, Vercel"/>
+</td>
+</tr>
+</table>
 
-<br/><br/>
-<sub><b>DATABASES & STORAGE</b></sub><br/>
-<img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,supabase&theme=dark" height="38" alt="PostgreSQL, MySQL, MongoDB, Supabase"/>
-<img src="https://img.shields.io/badge/Neo4j-008CC1?style=flat-square&logo=neo4j&logoColor=white" height="38" alt="Neo4j"/>
-
-<br/><br/>
-<sub><b>DEVOPS & CLOUD</b></sub><br/>
-<img src="https://skillicons.dev/icons?i=aws,gcp,vercel,docker,git,github,githubactions,linux,postman&theme=dark" height="38" alt="AWS, Google Cloud, Vercel, Docker, Git, GitHub, GitHub Actions, Linux, Postman"/>
-
+<div align="center">
+<br/>
+<img src="https://img.shields.io/badge/Generative%20AI-RAG%20%7C%20Gemini%20%7C%20LLM%20APIs%20%7C%20Prompt%20Engineering-8E75B2?style=flat-square" alt="Generative AI"/>
+<img src="https://img.shields.io/badge/Machine%20Learning-XGBoost%20%7C%20Random%20Forest%20%7C%20Gradient%20Boosting-EB5B2F?style=flat-square" alt="Machine Learning"/>
+<img src="https://img.shields.io/badge/Data-Time%20Series%20%7C%20EDA%20%7C%20Feature%20Engineering-150458?style=flat-square" alt="Data"/>
+<img src="https://img.shields.io/badge/Backend-REST%20APIs%20%7C%20Pydantic%20%7C%20SQLAlchemy%20%7C%20Auth-009688?style=flat-square" alt="Backend"/>
 </div>
 
 <!-- ============================== ACHIEVEMENTS ============================= -->
