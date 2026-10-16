@@ -54,6 +54,17 @@
 
 **B.Tech in Computer Science and Engineering** &nbsp;·&nbsp; IIIT Pune &nbsp;·&nbsp; *2023 – 2027*
 
+<!-- ============================ CONTRIBUTION SNAKE ========================== -->
+
+<br/>
+
+<p align="center" id="contribution-snake"><img src="assets/headings/contribution-snake.svg" height="34" alt="Contribution Snake"/></p>
+
+
+<p align="center">
+<img src="assets/snake/snake.svg" width="100%" alt="Snake eating the last 6 months of GitHub contributions"/>
+</p>
+
 <!-- ============================ CODING PROFILES ============================ -->
 
 <br/>
@@ -308,16 +319,6 @@
 </table>
 </div>
 
-<!-- ============================ CONTRIBUTION SNAKE ========================== -->
-
-<br/>
-
-<p align="center" id="contribution-snake"><img src="assets/headings/contribution-snake.svg" height="34" alt="Contribution Snake"/></p>
-
-
-<p align="center">
-<img src="assets/snake/snake.svg" width="100%" alt="Snake eating the last 6 months of GitHub contributions"/>
-</p>
 
 <!-- ================================= CONTACT =============================== -->
 
