@@ -7,6 +7,9 @@
 <a href="mailto:divyansh.indian1@gmail.com"><img src="https://img.shields.io/badge/EMAIL-divyansh.indian1-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
 <img src="https://komarev.com/ghpvc/?username=inddivyansh&label=PROFILE%20VIEWS&color=0969da&style=flat-square" alt="Profile views"/>
 
+
+<img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
+
 <sub>
 <a href="#about">About</a> &nbsp;/&nbsp;
 <a href="#experience">Experience</a> &nbsp;/&nbsp;
@@ -18,12 +21,9 @@
 <a href="#contact">Contact</a>
 </sub>
 
-<img src="assets/status/availability.svg" width="100%" alt="Open to internships and full-time opportunities"/>
-
 </div>
 
 <!-- ================================ ABOUT ================================= -->
-<p align="center" id="about"><img src="assets/headings/about.svg" height="34" alt="About Me"/></p>
 
 <div align="center">
 <img src="assets/about/terminal.svg" width="860" alt="Terminal: Divyansh Nagar, B.Tech CSE at IIIT Pune. AI products, 300+ DSA problems solved, open to internships and full-time opportunities."/>
@@ -203,7 +203,6 @@
 </div>
 
 <!-- ============================ CONTRIBUTION SNAKE ========================== -->
-<p align="center" id="contribution-snake"><img src="assets/headings/contribution-snake.svg" height="34" alt="Contribution Snake"/></p>
 
 <div align="center">
 <img src="assets/snake/snake.svg" width="70%" alt="A snake eating my GitHub contributions from the last four months"/>
